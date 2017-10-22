@@ -1,0 +1,44 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+bool sequential_search(vector <int> arr, int wanted){
+  bool flag = false;
+  for(int i = 0; i < arr.size(); i++){
+    if(arr[i] == wanted){
+      flag = true;
+      break;
+    }
+  }
+  return flag;//true if the number is in the array and false if no exist in the array
+}
+bool binary_search(vector <int> arr, int wanted){
+  int left = 0;
+  int right = arr.size() - 1;
+  int middle;
+  sort(arr.begin(), arr.end());//first we sort the vector 
+  while(right - left > 1){//while two indices do not collide
+    middle = (left + right) / 2;
+    if(wanted < arr[middle]){
+      right = middle;
+    }
+    else{
+      left = middle;
+    }
+  }
+  return (arr[left] == wanted)?true:false;
+}
+
+
+int main(){
+  int nums[] = {5,4,8,9,7,4,1,2,3,4,-4};
+  vector <int> arr(nums,nums + 12);
+  cout << sequential_search(arr,-4) << endl;//true
+  cout << sequential_search(arr,99) << endl;//false
+  cout << binary_search(arr,5) << endl;//true
+  cout << binary_search(arr,88) << endl;//true
+  
+  
+
+  return 0;
+}
