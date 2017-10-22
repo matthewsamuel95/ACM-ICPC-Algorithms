@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>//vector 
+#include <algorithm>//max function
+using namespace std;
+/*This program return the maximun value for an array of numbers using the concept of divide and conquer*/
+/*
+example arr:
+            8     9     -6    10      4      0
+            8     9         -6           10      4     0 // we divide in two arrays
+              /               \               /         \
+base case->(8   9)  base case(-6)          (10, 4)      (0)<-base case  
+            
+*/
+
+
+int max_divide(vector <int> arr, int r, int l){
+  if(r - l == 0)return arr[r];
+  int middle = (r + l) / 2;//the middle
+  int a = max_divide(arr, l, middle);//divide the left side
+  int b = max_divide(arr, middle + 1, r);//divide the right side
+  return max(arr[r],arr[l]);//returning the max of right and left
+}
+
+int main(){
+  int n;
+  vector <int> arr;
+  cin >> n;//enter the size of the array
+  for(int i = 0; i < n; i++){
+    int tmp;
+    cin >> tmp;//putting the numbers into the array
+    arr.push_back(tmp);
+  }
+  cout << max_divide(arr,0,arr.size() - 1);
+  return 0;
+}
