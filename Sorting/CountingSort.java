@@ -1,6 +1,5 @@
 public class CountingSort {
 
-
     public static int[] countingSort(int[] a, int k) {
 
         int c[] = new int[k];

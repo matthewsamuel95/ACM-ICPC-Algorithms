@@ -1,7 +1,7 @@
 public class RadixSort {
 
     protected static int d = 8;
-	protected static int w = 32;
+    protected static int w = 32;
 
     public static int[] radixSort(int[] a) {
 		int[] b = null;
