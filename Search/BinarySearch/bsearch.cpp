@@ -6,7 +6,7 @@
 std::vector<int> myarray;
 
 
-// implements linear search
+// implements binary search
 bool binary_search(int number)
 {
     int higher = myarray.size();
