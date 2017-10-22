@@ -17,7 +17,14 @@ function time(){return Date.now()}
 
 console.log(
   time() + '\n',
-  rockPaperScissors(26), '\n',
-  time() + '\n Seem to be getting immeasurably fast results.'
+  rockPaperScissors(), '\n',
+  time() + '\n Seem to be getting immeasurably fast results for my monkey brain.'
+  )
+
+  console.log(
+  time() + '\n',
+  rockPaperScissors(), '\n',
+  time() + '\n 11ms Right?'
   )
   
+// Whats kind of speed can JS push on this?
