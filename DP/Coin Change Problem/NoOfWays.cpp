@@ -7,7 +7,7 @@ using namespace std;
 
 /*
 
-Algorithm : Coin Change Problem
+Algorithm : Coin Change Problem (No of Ways)
 Type : DP
 
 Problem 
