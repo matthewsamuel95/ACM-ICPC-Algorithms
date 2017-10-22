@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main(){
+  //this is an example of the sieve of erathostenes between 1 and 100000
+  int N = 100000;
+  bool arr[N];
+  memset(arr,true,sizeof(arr) / sizeof(arr[0]));
+  for(int i = 2 ; i < N ; i++){
+    if(arr[i]){
+      for(int j=i*2 ; j < N ; j += i)arr[j] = false;
+    }
+  }
+  for(int i = 2; i < N; i++){
+    if(arr[i])cout << i << " ";
+  }
+  //this algorithm has O(N log log N) but can 
+  return 0;
+}
