@@ -1,0 +1,58 @@
+#include <iostream>
+#include <stdlib.h>
+/*
+EXAMPLE:
+  main_max = secondary_max = arr[0];
+  i = 0
+  [-8 9] 5 10 -5
+    \ /
+     1 = main_max
+  i = 1
+  [-8 9 5] 10 -5
+    \ / |
+     1  5
+      \/
+      6 = main_max
+  i = 2
+  [-8 9 5 10] -5
+    \ / |  |
+     1  5  |
+      \/   |
+      6   10
+       \  /
+        16 = main_max
+  i = 3
+  [-8 9 5 10] -5
+    \ / |  |   |
+     1  5  |   |
+      \/   |   |
+      6   10   |
+       \  /    |
+        16    -5
+          \   /
+           11 // but this is minor than 16, so main_max = 16
+*/
+
+using namespace std;
+/*kadane algorithm Maximun Subarray Algorithm*/
+int main(){
+  int n;
+  cin >> n;
+  int arr[n];
+  for(int i = 0; i < n; i++){
+    cin >> arr[i];
+  }
+  
+  /*MAXIMUN SUBARRAY ALGORITHM*/
+  int main_max, secondary_max;
+  main_max = secondary_max = arr[0];
+  for(int i = 1; i < n; i++){
+    secondary_max = max(secondary_max, secondary_max + arr[i]);
+    main_max = max(main_max, secondary_max);
+  }
+  cout << main_max << endl;
+  
+  return 0;
+}
+
+
