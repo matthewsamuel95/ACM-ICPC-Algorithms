@@ -49,7 +49,7 @@ void print(vector< vector<int> >&cost,vector<string> &input){
 			}
 		}
 	}
-	//use backtracking to print each line with the lowest penalty of extra spaces
+	//use backtracking to print the words with the lowest penalty of spaces
 	for(int k=0;k<backtracking.size();k++)
 	{	
 		if(k==0)
@@ -72,7 +72,6 @@ void print(vector< vector<int> >&cost,vector<string> &input){
 			cout<<endl;
 		}
 	}
-
 }
 
 
