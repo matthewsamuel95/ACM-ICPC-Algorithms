@@ -58,7 +58,6 @@ int main() {
     g.add_edge(start, end);
   }
 
-  // start BFS from node 0
   BFS(g, source);
   cout << "Source: " << source << endl; 
   print(g); // prints dist array
