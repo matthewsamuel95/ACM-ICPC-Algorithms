@@ -1,6 +1,6 @@
 /*
-	Problem : Given two strings find the minimal number of edit operations (insertion, deletion or substitution)
-	to modify a string from one to the other.
+	 Problem : Given two strings find the minimal number of edit operations (insertion, deletion or substitution)
+	 to modify a string from one to the other.
 */
 
 #include <string>
