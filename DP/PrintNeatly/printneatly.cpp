@@ -1,6 +1,3 @@
-// Given a text of n words, and an integer M, the length in characters of a line, print the text neatly to minimize
-// the number of extra spaces at the end of the lines.
-
 #include <string>
 #include <iostream>
 #include <vector>
