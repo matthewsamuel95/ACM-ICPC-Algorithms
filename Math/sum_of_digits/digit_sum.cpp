@@ -1,4 +1,4 @@
-/ C++ program to compute sum of digits in numbers from 1 to n
+//C++ program to compute sum of digits in numbers from 1 to n
 #include<bits/stdc++.h>
 using namespace std;
  
