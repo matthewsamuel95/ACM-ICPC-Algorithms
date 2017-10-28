@@ -1,58 +1,34 @@
+//code for linear Search
 #include <iostream>
 #include <vector>
-#include <string>
-#include <algorithm>
 
-std::vector<int> myarray;
+using namespace std;
 
+int main(){
+    int i,e,in,n;
+    vector <int> v;
+  
+    cout<<"Enter the Number of elements to be inserted in Array : ";
+    cin>>n;
 
-// implements linear search
-bool linear_search(int number)
-{
-    int n = myarray.size();
-    for (int i = 0; i < n; i++)
-    {
-        if (number == myarray[i])
+    for(i=0;i<n;i++)
         {
-            std::cout << "found at pos: " << i + 1 << std::endl;
-            std::cout << myarray[i] << std::endl;
-            return true;
+            cin>>in;
+            v.push_back(in);
+        }
+
+    cout<<"Enter the Element to be Search : ";
+    cin>>e;
+
+    // implementation of linear search
+    for (i = 0; i < v.size(); i++)
+    {
+        if (e == v[i])
+        {
+            cout << "Element "<<e<<" at position : " << i + 1 <<endl;
+            return 0;
         }
     }
-    return false;
-}
-
-
-bool is_digits(const std::string &str)
-{
-    return std::all_of(str.begin(), str.end(), ::isdigit); // C++11
-}
-
-
-int main(int argc, char const *argv[])
-{
-    /* code */
-
-    std::string z;
-    while(true)
-    {
-        std::cin>>z;
-        if (is_digits(z))
-        {
-            int input = stoi(z);
-            myarray.push_back(input);
-        }
-        else
-            break;
-    }
-
-
-
-    std::cout<<"enter number you want to search"<<std::endl;
-    int k;
-    std::cin>>k;
-    bool found = linear_search(k);
-    if(found == false)
-        std::cout<<"couldn't find number"<<std::endl;
+    cout<<"Sorry, Element is not present ";
     return 0;
 }
