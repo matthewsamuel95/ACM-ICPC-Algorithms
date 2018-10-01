@@ -1,15 +1,17 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
-#include <cmath>
 
 using namespace std;
 
 int main() {
-    double a = 0;
-    cout<<"Enter an integer:"<<endl;
-    cin>>a;
-    if (a <= 0) return 0;
-    printf("Square root of %lf is: %.0lf \n",a,floor(sqrt(a)));
+    long long int n,x = 0,count=0;
+    cout<<"Enter an integer: "<<endl;
+    cin>>n;
+    for(int i = 1;x <= n;i += 2) {
+        x += i;
+        count++;
+    }
+    printf("Square root of %lld is: %lld\n",n,count-1);
     return 0;
 }
