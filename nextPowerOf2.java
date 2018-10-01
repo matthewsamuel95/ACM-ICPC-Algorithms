@@ -1,4 +1,3 @@
-package cls;
 
 import java.util.Scanner;
 
