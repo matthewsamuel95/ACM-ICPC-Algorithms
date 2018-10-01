@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Kruskal {
+public class KruskalsMinimumSpanningTree {
     int V;
     int E; //Number of vertices and edges in the graph
     Edge[] edge;
@@ -33,7 +33,7 @@ public class Kruskal {
         }
     }
 
-    public Kruskal(int v, int e) {
+    public KruskalsMinimumSpanningTree(int v, int e) {
         V = v;
         E = e;
 
@@ -101,7 +101,7 @@ public class Kruskal {
         //and pass in the parameters v (vertices) and e (edges)
         //The constructor of the Main class will initialize all our
         //arrays for us.
-        Kruskal graph = new Kruskal(v, e);
+        KruskalsMinimumSpanningTree graph = new KruskalsMinimumSpanningTree(v, e);
 
         //Using a for-loop, input the information about each edge
         for (int i = 0; i < e; i++) {
