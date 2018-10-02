@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void power(long long int *res,long long int x,long long int y,long long int m)
+{
+    x=x%m;
+    while (y>0)
+    {
+        if(y & 1)
+            *res = ((*res)*x)%m;
+        y/=2;
+        x=(x*x)%m;
+    }
+}
+
+int main()
+{
+    long long int x,y,m,t,res,i;
+    scanf("%lld",&t);
+    while(t--)
+    {
+        scanf("%lld %lld %lld",&x,&y,&m);
+        res=x%m;
+        for(i=2;i<=y;i++) {
+            power(&res, res, i, m);
+        }
+        printf("%lld\n",res);
+    }
+}
