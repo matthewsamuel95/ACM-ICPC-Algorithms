@@ -1,0 +1,12 @@
+def pow(x, y):
+    """Raise x to the power y, where y must be a nonnegative integer."""
+    result = 1
+    for _ in range(y):   # using _ to indicate throwaway iteration variable
+        result *= x
+    return result
+
+print("Enter a number:")
+a=int(input())
+print("Enter power of number:")
+n=int(input())
+print(pow(a,n))
