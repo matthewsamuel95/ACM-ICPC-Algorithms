@@ -2,7 +2,10 @@
 #include <cmath>
 using namespace std;
 
-double getPow(double n, double e) {;
+double getPow(double n, double e) {
+    if (e < 0) {
+      return 1;
+    }
     double T = 1;
     for(int k = 1; k <= e; k++) {
       T = T * n;
