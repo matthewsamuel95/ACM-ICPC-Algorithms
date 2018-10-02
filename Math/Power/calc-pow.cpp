@@ -2,8 +2,12 @@
 #include <cmath>
 using namespace std;
 
-double getPow(double x, double n) {
-    return pow(x, n);
+double getPow(double n, double e) {;
+    double T = 1;
+    for(int k = 1; k <= e; k++) {
+      T = T * n;
+    }
+    return T;
 }
 
 int main() {
