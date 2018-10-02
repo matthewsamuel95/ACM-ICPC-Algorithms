@@ -3,11 +3,11 @@ public class power{
 	public static void main(String args[]){
 		int base,power;	//base and power values can be replaced by user input
 		base = 4;
-		power = 3;
+		power = 2;
 		System.out.println(calcPower(base,power));
 	}
 
-	private static long calcPower(int base,int power){
+	private static float calcPower(int base,int power){
 		long result = base;
 		if(power==0)
 		return 1;
@@ -16,6 +16,8 @@ public class power{
 		for(int i=2;i<=power;i++){
 			result = result*base;
 		}
+		if(power<0)
+			return (float)1/result;
 		return result;
 	}
 }
