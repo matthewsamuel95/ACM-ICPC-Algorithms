@@ -17,21 +17,18 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 
 **Table of Contents**
 
-
-* Breadth First Traversal
-* Backtracking
-* Depth First Search
-* Bit Manipulation
-* Computational Geometry
-* Data Structures
-* Divide and Conquer Strategy
-* Dynamic Programming
-* Graph Algorithms 
-* Greedy Algorithms
-* Mathematical Algorithms
-* Randomized Algorithms
-* Search Algorithms
-* Sorting Algorithms
-* String Algorithms
-
-Happy Coding!!!!!!!!!
+* [Breadth First Search](/BFS)
+* [Binary Search Tree](/BST)
+* [Backtracking](/BackTracking)
+* [DFS](/DFS)
+* [Bit manipulation](/BitManipulation)
+* [Data structures](/Data%20Structures)
+* [Dynamic programming](/DP)
+* [Graph algorithms](/Graph) 
+* [Greedy algorithms](/Greedy/Kruskal’sMinimumSpanningTree)
+* [Hashing algorithms](/Hashing) 
+* [Mathematical algorithms](/Math)
+* [Network Flow](/NetworkFlow)
+* [Search algorithms](/Search) 
+* [Sorting algorithms](/Sorting)
+* [String algorithms](/String)
