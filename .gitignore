@@ -1,0 +1,8 @@
+*.DS_Store
+*.pyc
+*.txt
+.cache/*
+*.DS
+.idea/*
+*.out
+*.in
