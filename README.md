@@ -20,7 +20,7 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 * [Breadth First Search](/BFS)
 * [Binary Search Tree](/BST)
 * [Backtracking](/BackTracking)
-* [DFS](/DFS)
+* [Depth First Search](/DFS)
 * [Bit manipulation](/BitManipulation)
 * [Data structures](/Data%20Structures)
 * [Dynamic programming](/DP)
