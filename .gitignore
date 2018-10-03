@@ -4,3 +4,4 @@
 .cache/*
 *.DS
 .idea/*
+*.out
