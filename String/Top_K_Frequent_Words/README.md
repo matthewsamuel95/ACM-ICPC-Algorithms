@@ -4,7 +4,7 @@ This cpp code is a solution for the issue [#277](https://github.com/matthewsamue
 
 ## PROBLEM STATEMENT
 
-Given an array of terms `s1 s2 s3 ...`, length of the array `n` and a number of output terms `k`, write the top `k` frequency terms.
+Given an array of terms `s1 s2 s3 ... sn`, length of the array `n` and a total number of output terms `k`, write the top `k` frequent terms.
 
 ## POINT OF THIS ALGORITHM
 
