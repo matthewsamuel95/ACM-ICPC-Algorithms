@@ -1,33 +1,34 @@
-#include <iostream>
-#include <algorithm>
-#include <unordered_map>
-
+#include<algorithm>
+#include<vector>
 using namespace std;
 
-bool find_triplet( int arr[], int arr_size, int value ) {
-	unordered_map<int, int> map;
-	
-	for ( int i = 0; i < arr_size; i++ )
-		map[arr[i]] = i;
-		
-	for ( int i = 0; i < arr_size - 1; i++ )
-		for ( int j = i + 1; j < arr_size; j++ ) {
-			int sum = value - ( arr[i] + arr[j] );
-			
-			if ( map.find( sum ) != map.end() )
-				if ( map[sum] != i && map[sum] != j ) {
-					cout << '(' << arr[i] << ", " << arr[j] << ", " << sum << ')' << endl; 
-					return true;
-				}
-		}
-	return false;
-}
+class Solution {
+public:
+    vector<vector<int> > threeSum(vector<int> &num) {
+        vector<vector<int> > ans;
+        if(num.size()<3) return ans;
+        		
+		sort(num.begin(), num.end());
 
-int main()
-{
-	int arr[] = { 2, 7, 4, 0, 9, 5, 1, 3 };
-	int arr_size = sizeof( arr ) / sizeof( arr[0] );
-	int value = 10;
-	
-	return find_triplet( arr, arr_size, value );
-}
+		for (size_t i = 0; i < num.size() - 2; i++) {
+            if(i && num[i]==num[i-1]) continue;
+			
+            size_t a = i + 1, b = num.size() - 1;
+			while (a < b) {
+                if(a>i+1 && num[a]==num[a-1])           { a++; continue; }
+                if(b<num.size()-1 && num[b]==num[b+1])  { b--; continue; }
+				
+                int sum2 = num[a] + num[b];
+				if (sum2 == -num[i]) {
+					int sol[3] = { num[i], num[a], num[b] };
+					ans.push_back(vector<int> (sol, sol + 3));
+					a++, b--;
+				} else if (sum2 < -num[i])
+					a++;
+				else if (sum2 > num[i])
+					b--;
+			}
+		}
+		return ans;
+	}
+};
