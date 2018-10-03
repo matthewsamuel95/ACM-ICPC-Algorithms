@@ -1,0 +1,4 @@
+*.text
+*.out
+*.in
+*.pyc
