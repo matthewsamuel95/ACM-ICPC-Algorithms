@@ -15,7 +15,7 @@ What is **ACM-ICPC Algorithms**?
 ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized olympiad.It provides solutions in various languages spanning C, C++, Java, Python and others.
 
 
-**Table of Contents**
+**Table of Contents :**
 
 * [Breadth First Search](/BFS)
 * [Binary Search Tree](/BST)
