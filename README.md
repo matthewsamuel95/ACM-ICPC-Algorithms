@@ -26,7 +26,7 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 * [Dynamic Programming](/DP)
 * [Graph Algorithms](/Graph) 
 * [Greedy Algorithms](/Greedy/Kruskal’sMinimumSpanningTree)
-* [Hashing algorithms](/Hashing) 
+* [Hashing Algorithms](/Hashing) 
 * [Mathematical Algorithms](/Math)
 * [Network Flow](/NetworkFlow)
 * [Search Algorithms](/Search) 
