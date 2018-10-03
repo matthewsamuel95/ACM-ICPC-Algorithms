@@ -2,7 +2,7 @@
 
 What is **ACM-ICPC**?
 
-ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world
+ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.
 
 For more information visit : 
 
@@ -12,7 +12,7 @@ For more information visit :
 
 What is **ACM-ICPC Algorithms**?
 
-ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized Olympiad.This provides solutions in a various languages spanning C, C++, Java, Python and others.
+ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized olympiad.It provides solutions in various languages spanning C, C++, Java, Python and others.
 
 
 **Table of Contents**
@@ -20,18 +20,18 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 
 * Breadth First Traversal
 * Backtracking
-* DFS
-* Bit manipulation
-* Computational geometry
-* Data structures
-* Divide conquer
-* Dynamic programming
-* Graph algorithms 
-* Greedy algorithms
-* Mathematical algorithms
-* Randomized algorithms
-* Search 
-* Sorting
-* String algorithms
+* Depth First Search
+* Bit Manipulation
+* Computational Geometry
+* Data Structures
+* Divide and Conquer Strategy
+* Dynamic Programming
+* Graph Algorithms 
+* Greedy Algorithms
+* Mathematical Algorithms
+* Randomized Algorithms
+* Search Algorithms
+* Sorting Algorithms
+* String Algorithms
 
 Happy Coding!!!!!!!!!
