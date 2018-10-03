@@ -12,7 +12,7 @@ Install Git:
 
 
 
-###### Note: 
+#### Note: 
 
 Math problems should go in Math/{title of problem}/{ur file name}.
 
