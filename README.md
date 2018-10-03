@@ -2,7 +2,7 @@
 
 What is **ACM-ICPC**?
 
-ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world
+ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.
 
 For more information visit : 
 
@@ -12,27 +12,27 @@ For more information visit :
 
 What is **ACM-ICPC Algorithms**?
 
+
 ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized Olympiad.This provides solutions in a various languages spanning C, C++, Java, Python and others.
 
 
-**Table of Contents**
+**Table of Contents :**
 
-
-* Breadth First Traversal
-* Backtracking
-* DFS
-* Bit manipulation
-* Computational geometry
-* Data structures
-* Divide conquer
-* Dynamic programming
-* Graph algorithms 
-* Greedy algorithms
-* Mathematical algorithms
-* Randomized algorithms
-* Search 
-* Sorting
-* String algorithms
+* [Breadth First Search](/BFS)
+* [Binary Search Tree](/BST)
+* [Backtracking](/BackTracking)
+* [Depth First Search](/DFS)
+* [Bit Manipulation](/BitManipulation)
+* [Data Structures](/Data%20Structures)
+* [Dynamic Programming](/DP)
+* [Graph Algorithms](/Graph) 
+* [Greedy Algorithms](/Greedy/Kruskal’sMinimumSpanningTree)
+* [Hashing Algorithms](/Hashing) 
+* [Mathematical Algorithms](/Math)
+* [Network Flow](/NetworkFlow)
+* [Search Algorithms](/Search) 
+* [Sorting Algorithms](/Sorting)
+* [String Algorithms](/String)
 
 
 
@@ -40,4 +40,4 @@ Please refer to the [CONTRIBUTING.md](https://github.com/swastikbanerjee07/ACM-I
 
 
 
-Happy Coding!!!!!!!!!
+**Happy Coding!!!!!!!!!**
