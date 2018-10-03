@@ -34,4 +34,10 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 * Sorting
 * String algorithms
 
+
+
+Please refer to the [CONTRIBUTING.md](https://github.com/swastikbanerjee07/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md) file to see how to contribute.
+
+
+
 Happy Coding!!!!!!!!!
