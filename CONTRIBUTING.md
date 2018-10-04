@@ -12,14 +12,10 @@ Install Git:
 
 
 
-#### Note: 
+#### Notes: 
 
-Math problems should go in Math/{title of problem}/{ur file name}.
-
-Make sure your file is saved with .cpp or .c or .java on whatever language you are using 
-
-and if a title of a problem already exists and you have another solution then upload the solution in the same subfolder.
-
-If you have used a different language then put it in Math/{name of problem}/{language}/{file name}.
-
-Similarly, if the topic is not math if its sorting put in Sorting/... etc.
+-Math problems should go in Math/<Problem Title>/<Your File Name>. 
+-Make sure your file is saved in your programming language's file extension (e.g. *.java, *.c, *.py, etc.) 
+-If a title of a problem already exists and you have another solution, upload your solution within the same subfolder.
+-If you have used a different language then put it in Math/<Name of Problem>/<Language>/<File Name>. 
+Similarly, if the topic is not related to Math, then put it in its closest related folder (e.g. Sorting topics should go under the "Sorting" folder.   
