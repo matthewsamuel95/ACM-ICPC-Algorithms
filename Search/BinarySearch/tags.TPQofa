@@ -1,4 +1,0 @@
-myarray	bsearch.cpp	/^std::vector<int> myarray;$/;"	v
-binary_search	bsearch.cpp	/^bool binary_search(int number)$/;"	f
-is_digits	bsearch.cpp	/^bool is_digits(const std::string &str)$/;"	f
-main	bsearch.cpp	/^int main(int argc, char const *argv[])$/;"	f
