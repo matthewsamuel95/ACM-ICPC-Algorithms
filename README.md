@@ -12,7 +12,8 @@ For more information visit :
 
 What is **ACM-ICPC Algorithms**?
 
-ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized olympiad.It provides solutions in various languages spanning C, C++, Java, Python and others.
+
+ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized Olympiad.This provides solutions in a various languages spanning C, C++, Java, Python and others.
 
 
 **Table of Contents :**
@@ -32,3 +33,11 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 * [Search Algorithms](/Search) 
 * [Sorting Algorithms](/Sorting)
 * [String Algorithms](/String)
+
+
+
+Please refer to the [CONTRIBUTING.md](https://github.com/swastikbanerjee07/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md) file to see how to contribute.
+
+
+
+**Happy Coding!!!!!!!!!**
