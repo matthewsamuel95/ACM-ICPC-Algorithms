@@ -1,20 +1,26 @@
-[Please refer here to see how to contribute.](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md)
+# ACM-ICPC Algorithms
 
-What is **ACM-ICPC**?
+### Introduction to ACM ICPC
+For starters: ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world. 
 
-ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.
+For nerds: Elaborately, we can say that the [International Collegiate Programming Contest](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) is an algorithmic programming contest for college students. 
+- Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. 
+- Through training and competition, teams challenge each other to raise the bar on the possible. 
+- Quite simply, it is the oldest, largest, and most prestigious programming contest in the world. 
 
-For more information visit : 
+### Then what is the purpose of ACM-ICPC Algorithms ?
+ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized Olympiad. It aims at providing solutions in a various languages,as per [ICPC 2018 WF](https://icpc.baylor.edu/worldfinals/programming-environment), including 
+-  C 
+-  C++
+-  Java
+-  Python (2 & 3)
+-  Kotlin.
 
->https://icpc.baylor.edu/
+If you know algorithms and don't know particular language, this is effort to help you understand ICPC algorithms in favorite language.
 
->https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest
+If you have found this effort interesting and rewarding, please refer this for [contribution](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md).
 
-What is **ACM-ICPC Algorithms**?
-
-
-ACM-ICPC Algorithms is your personal offline collection of every algorithm and data structure used to solve the questions of this worldwide recognized Olympiad.This provides solutions in a various languages spanning C, C++, Java, Python and others.
-
+For more information visit: **Official Website of [ICPC](https://icpc.baylor.edu/)**
 
 **Table of Contents :**
 
