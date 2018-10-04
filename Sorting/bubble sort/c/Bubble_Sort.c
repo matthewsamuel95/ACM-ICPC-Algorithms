@@ -1,36 +1,33 @@
-#include<stdio.h>
-#define int long long int
-#undef int
-
-int main()
+/*
+ * C# Program to Perform Bubble Sort
+ */
+using System;
+class bubblesort
 {
-  #define int long long int
-  
-  int arr[1005], n;
-  scanf("%lld", &n);
-  
-  for(int i=0; i<n; i++)
-  {
-    scanf("%lld", &arr[i]);
-  }
-  
-  for(int j=0; j<n; j++)
-  {
-    for(int k=0; k<n-1-j; k++)
-    {
-      if(arr[k]>arr[k+1])
-      {
-        arr[k]=arr[k]^arr[k+1];
-        arr[k+1]=arr[k]^arr[k+1];
-        arr[k]=arr[k]^arr[k+1];
-      }
+        static void Main(string[] args)
+        {
+            int[] a = { 3, 2, 5, 4, 1 };  
+            int t;
+            Console.WriteLine("The Array is : ");
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+            for (int j = 0; j <= a.Length - 2; j++)
+            {
+                for (int i = 0; i <= a.Length - 2; i++)
+                {
+                    if (a[i] > a[i + 1])
+                    {
+                        t = a[i + 1];
+                        a[i + 1] = a[i];
+                        a[i] = t;
+                    }
+                }
+            }
+            Console.WriteLine("The Sorted Array :");
+            foreach (int aray in a)                         
+                Console.Write(aray + " ");
+            Console.ReadLine();
+        }
     }
-  }
-  
-  for(int c=0; c<n; c++)
-  {
-    printf("%lld ", arr[c]);
-  }
-
-  return 0;
- }
