@@ -15,3 +15,4 @@ if __name__ == '__main__':
     # sample input format below
     graph = {0: [1, 2], 1: [2], 2: []} 
     bfs(graph, 0)
+    #sample
