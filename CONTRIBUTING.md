@@ -1,4 +1,4 @@
-##### File Placement: 
+## File Placement: 
 
 For example, math problems should go in Math/{Problem Title}/{Your File Name}
 
@@ -12,7 +12,7 @@ Similarly, if the topic is not related to Math, then put it in its closest relat
 
 
 
-###### Pre-requisites:
+## Pre-requisites:
 Install Git: 
 *Are you a first time user and just beginning with Open-Source projects? No problem! Here's [how you can install Git on your computer](https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git)*
 ###### After you are done installing Git on your computer:
