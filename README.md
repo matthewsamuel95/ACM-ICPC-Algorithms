@@ -1,4 +1,4 @@
-# ACM-ICPC Algorithms
+[Please refer here to see how to contribute.](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md
 
 What is **ACM-ICPC**?
 
@@ -33,11 +33,3 @@ ACM-ICPC Algorithms is your personal offline collection of every algorithm and d
 * [Search Algorithms](/Search) 
 * [Sorting Algorithms](/Sorting)
 * [String Algorithms](/String)
-
-
-
-Please refer to the [CONTRIBUTING.md](https://github.com/swastikbanerjee07/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md) file to see how to contribute.
-
-
-
-**Happy Coding!!!!!!!!!**
