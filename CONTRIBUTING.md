@@ -1,3 +1,15 @@
+#### File Placement: 
+
+For example, math problems should go in Math/{Problem Title}/{Your File Name}
+
+Make sure your file is saved in your programming language's file extension (e.g. *.java, *.c, *.py, etc.) 
+
+If a title of a problem already exists and you have another solution, upload your solution within the same subfolder.
+
+If you have used a different language then put it in Math/{Name of Problem}/{Language}/{File Name}. 
+
+Similarly, if the topic is not related to Math, then put it in its closest related folder (e.g. Sorting topics should go under the "Sorting" folder.   
+
 ###### Pre-requisites:
 Install Git: 
 *Are you a first time user and just beginning with Open-Source projects? No problem! Here's [how you can install Git on your computer](https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git)*
@@ -9,13 +21,3 @@ Install Git:
 5. Add a short message about what you contributed for with the git commit command. For eg. $ git commit -m "Fixed documentation typos"
 6. Now use the command $ git push --set-upstream origin new-branch to push the changes to the current branch of your forked repository
 7. Now you can create a Pull Request with the chosen branch as new-branch
-
-
-
-#### Notes: 
-
--Math problems should go in Math/<Problem Title>/<Your File Name>. 
--Make sure your file is saved in your programming language's file extension (e.g. *.java, *.c, *.py, etc.) 
--If a title of a problem already exists and you have another solution, upload your solution within the same subfolder.
--If you have used a different language then put it in Math/<Name of Problem>/<Language>/<File Name>. 
-Similarly, if the topic is not related to Math, then put it in its closest related folder (e.g. Sorting topics should go under the "Sorting" folder.   
