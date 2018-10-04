@@ -1,4 +1,4 @@
-#### File Placement: 
+##### File Placement: 
 
 For example, math problems should go in Math/{Problem Title}/{Your File Name}
 
@@ -9,6 +9,8 @@ If a title of a problem already exists and you have another solution, upload you
 If you have used a different language then put it in Math/{Name of Problem}/{Language}/{File Name}. 
 
 Similarly, if the topic is not related to Math, then put it in its closest related folder (e.g. Sorting topics should go under the "Sorting" folder.   
+
+
 
 ###### Pre-requisites:
 Install Git: 
