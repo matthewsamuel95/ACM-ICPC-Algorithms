@@ -1,4 +1,4 @@
-[Please refer here to see how to contribute.](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md
+[Please refer here to see how to contribute.](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md)
 
 What is **ACM-ICPC**?
 
