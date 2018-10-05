@@ -8,19 +8,17 @@ Alternately, we can say that the [International Collegiate Programming Contest](
 - Through training and competition, teams challenge each other to raise the bar on what could be done. 
 - Quite simply, it is the oldest, largest, and most prestigious programming contest in the world. 
 
-### Then what is the purpose of ACM-ICPC Algorithms ?
-ACM-ICPC Algorithms is a collection of every algorithm and data structure used to solve questions in this worldwide olympiad. It aims to provide solutions in various languages as per [ICPC 2018 WF](https://icpc.baylor.edu/worldfinals/programming-environment), including:
+### Purpose of ACM-ICPC Algorithms :
+ACM-ICPC Algorithms is a collection of importants algorithm and data structure used to solve questions in this worldwide olympiad. It aims to provide solutions in various languages as per [ICPC 2018 WF](https://icpc.baylor.edu/worldfinals/programming-environment), including:
 -  C 
 -  C++
 -  Java
 -  Python (2 & 3)
 -  Kotlin.
 
-If you know algorithms but don't know a particular language, this can help you understand ICPC algorithms in any language.
+For more information, visit: **Official Website of [ICPC](https://icpc.baylor.edu/)**
 
 If you wish to contribute, please refer to [the contributor guidelines](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md).
-
-For more information, visit: **Official Website of [ICPC](https://icpc.baylor.edu/)**
 
 **Table of Contents :**
 
