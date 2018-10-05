@@ -62,21 +62,52 @@ bool find(struct node * root, int key) {
 }
 int main() {
   struct node * bst = NULL;
-  bst = create(bst, 5);
-  create(bst, 10);
-  create(bst, 20);
-  create(bst, 21);
-  create(bst, 14);
-  create(bst, 9);
-  create(bst, 3);
-  create(bst, 12);
-  create(bst, 21);
-  inorder(bst);
-  cout << endl;
-  postorder(bst);
-  cout << endl;
-  preorder(bst);
-  cout << endl;
-
+  cout<<"enter 1 to insert element"<<endl;
+  cout<<"enter 2 to do preorder"<<endl;
+  cout<<"enter 3 to do inorder"<<endl;
+  cout<<"enter 4 to do postorder"<<endl;
+  cout<<"enter 5 to exit"<<endl;
+  int choice;
+  cin>>choice;
+  while(choice!=5)
+  {
+    
+  switch(choice)
+  {
+    case 1:
+      {
+        int a;
+        cout<<"enter the element to enter"<<endl;
+        cin>>a;
+        create(bst,a);
+        break();
+      }
+    case 2:
+      {
+        preorder(bst);
+        break();
+      }
+    case 3:
+      {
+        inorder(bst);
+        break();
+      }
+    case 4:
+      {
+        postorder(bst);
+        break();
+      }
+    default :
+     {
+       cout<<"entered Wrong option try again";
+     }
+  }
+  cout<<"enter 1 to insert element"<<endl;
+  cout<<"enter 2 to do preorder"<<endl;
+  cout<<"enter 3 to do inorder"<<endl;
+  cout<<"enter 4 to do postorder"<<endl;
+  cout<<"enter 5 to exit"<<endl;
+  cin>>choice;
+}
   return 0;
 }
