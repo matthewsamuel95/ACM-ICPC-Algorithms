@@ -17,7 +17,8 @@ int nCr(int n, int r) {
 int main(int argc, char** argv){
 
     if(argc != 3){
-        cerr<<"Usage: nCr n r\nWhere n is the number of all items and r is the number of chosen sets."
+        cerr<<"Usage: nCr n r\nWhere n is the number of all items and r is the number of chosen sets.";
+        return 1;
     }
     int n = atoi(argv[1]), r = atoi(argv[2]);
     printf("%d choose %d = %d\n", n, r, nCr(n,r));
