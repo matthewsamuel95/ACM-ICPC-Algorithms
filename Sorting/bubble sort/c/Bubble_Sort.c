@@ -1,36 +1,32 @@
 #include<stdio.h>
-#define int long long int
-#undef int
 
-int main()
-{
-  #define int long long int
-  
-  int arr[1005], n;
-  scanf("%lld", &n);
-  
+void swap(int *x, int *y) { 
+    int temp = *x; 
+    *x = *y; 
+    *y = temp; 
+} 
+
+int main(){  
+  int n, i, j;
+  bool swapped;
+  scanf("%d", &n);
+  int *a = (int *)malloc(n * sizeof(int)); 
   for(int i=0; i<n; i++)
-  {
-    scanf("%lld", &arr[i]);
-  }
-  
-  for(int j=0; j<n; j++)
-  {
-    for(int k=0; k<n-1-j; k++)
-    {
-      if(arr[k]>arr[k+1])
-      {
-        arr[k]=arr[k]^arr[k+1];
-        arr[k+1]=arr[k]^arr[k+1];
-        arr[k]=arr[k]^arr[k+1];
-      }
-    }
-  }
-  
-  for(int c=0; c<n; c++)
-  {
-    printf("%lld ", arr[c]);
-  }
-
+    scanf("%d", &a[i]);
+   
+  for (i = 0; i < n - 1; i++) { 
+    swapped = false; 
+    for (j = 0; j < n - i - 1; j++) { 
+      if (a[j] > a[j+1]) { 
+        swap(&a[j], &a[j+1]); 
+        swapped = true; 
+      } 
+    } 
+    if (swapped == false) 
+      break; 
+   } 
+  for(i = 0; c < n; c++)
+    printf("%d ", a[i]);
+  free(a);
   return 0;
- }
+}
