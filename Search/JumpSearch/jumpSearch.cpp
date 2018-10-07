@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> //you can also use #include<iostream.h> but then also include math.h
+#include<bits/stdc++.h>  //you can also use #include<iostream.h> but then also include math.h
 using namespace std;
 #define MAX 500
 //function to perfrom jump search

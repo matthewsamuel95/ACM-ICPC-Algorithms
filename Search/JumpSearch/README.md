@@ -12,4 +12,4 @@ STEP 4: Since the element at index 16 is greater than 55 we will jump back a ste
 STEP 5: Perform linear search from index 9 to get the element 55.
 
 ## Time Complexity
-O(sqrt(n))
+ O(sqrt(n))
