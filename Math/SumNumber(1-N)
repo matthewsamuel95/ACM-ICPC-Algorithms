@@ -1,0 +1,42 @@
+#define _CRT_SECURE_NO_WAR
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define ull unsigned long long int
+#define file freopen("input.txt", "r", stdin);freopen("output.txt", "w", stdout);
+#define KingOfWrongAnswer cin.tie(0);std::ios::sync_with_stdio(false);
+#define forit(i, a) for ( __typeof( (a).begin() ) i = (a).begin(); i != (a).end(); i++ )
+#define mp make_pair
+#define pb push_back
+#define clr(a,n) memset(a,n,sizeof(a))
+#define all(c) c.begin(), c.end()
+#define rep(i,n) for(int i=0;i<n;i++)
+#define popone(a) __builtin_popcount(a)
+#define popzero(a) __builtin_ctz(a)
+#define PI = 2.0*acos(0.0)
+#define mod 1000000007
+#define pi 3.14159265359
+//ll gcd (ll x,ll y){if(y==0)return x;return gcd(y,x%y);}
+//ll lcm(ll a,ll b){return a/gcd(a,b) * b;}
+//int getbit(int n,int i){return ((n>>i)&1)==1;}
+//int setbit(int n,int i,int val){return val?(n|(1<<i)):(n&~(1<<i));}
+//int graycode(int i){return i^(i>>1);}
+//bool power2(int x){return (x && !(x & (x - 1)));}
+//ll largest_power(ll n){n = n| (n>>1);n= n| (n>>2);n = n| (n>>4);n = n| (n>>8);return (n+1)>>1;}
+//bool cmp(pair<int,int>x,pair<int,int>y){if (x.first==y.first) return x.second>y.second;return x.first<y.first;}
+//bool vaild(int x,int y,int n){return (0 <= x && x < n && 0 <= y && y < n);}
+//int dx[] = {-1, -1, 1, 1, -2, -2, 2, 2 };
+//int dy[] = {2, -2, 2, -2, 1, -1, 1, -1 };
+//int dx[] = {0, 0, -1, 1, -1, -1, 1, 1};
+//int dy[] = {-1, 1, 0, 0, 1, -1, -1, 1};
+//int dx[]= {-1, 1, 0, 0};
+//int dy[]= {0, 0, 1, -1};
+int main()
+{
+    KingOfWrongAnswer
+    // sum number from 1 to n
+    int n;
+    cin>>n;
+    cout<<(n*(n+1)/2)<<endl;
+    return 0;
+}
