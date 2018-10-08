@@ -26,6 +26,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 * [Backtracking](/BackTracking)
    * [Knights Tour](/BackTracking/KnightsTour)
    * [NQueens](/BackTracking/NQueens)
+   * [Rat In A Maze](/Backtracking/RatInAMaze)
 * [Depth First Search](/DFS)
 * [Bit Manipulation](/BitManipulation)
 * [Data Structures](/Data%20Structures)
