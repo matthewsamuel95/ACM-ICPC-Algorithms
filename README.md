@@ -36,3 +36,4 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 * [Search Algorithms](/Search) 
 * [Sorting Algorithms](/Sorting)
 * [String Algorithms](/String)
+* [Prime Algorithms](/Prime)
