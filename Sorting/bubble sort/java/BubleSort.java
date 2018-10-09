@@ -6,14 +6,6 @@
 
 import java.util.Scanner;
  
-/**
- * 
- * @author Yudi Setiawan
- * 
- * Bubble Sort
- *
- */
- 
 public class BubleSort
 {
     public static void main(String[] args)
