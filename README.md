@@ -124,7 +124,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Max Sub Square](/Math/Max_Sub_Square)
    * [Miller Rabin Primality Test](/Math/miller_rabin_primality_test)
    * [Modular Multiplication Inverse](/Math/modular_multiplicative_inverse)
-   * [Nest Power of 2](/Math/NextPow2)
+   * [Next Power of 2](/Math/NextPow2)
    * [Nth Root](/Math/nthRoot)
    * [Pascal Row](/Math/pascal_row)
    * [Power](/Math/Power)
