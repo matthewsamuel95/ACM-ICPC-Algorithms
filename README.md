@@ -31,6 +31,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 * [Depth First Search](/DFS)
 * [Bit Manipulation](/BitManipulation)
    * [Checking Power of 2](/BitManipulation/Checking_power_of_2)
+   * [Nth Magic No](/BitManipulation/Nth_magic_number)
    * [Count Ones](/BitManipulation/count_ones)
    * [Divide Integers](/BitManipulation/divide_integers)
    * [Even Odd](/BitManipulation/even_odd)
