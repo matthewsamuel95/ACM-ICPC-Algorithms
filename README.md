@@ -94,7 +94,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Greedy Graph Coloring](/Greedy/Greedy_Graph_Coloring)
    * [Huffman Coding](/Greedy/Huffman%20coding)
    * [Knapsack](/Greedy/Knapsack)
-   * [Kruskal's Minimum Spanning Tree](/Greedy/Kruskal'sMinimumSpanningTree)
+   * [Kruskal's Minimum Spanning Tree](/Greedy/Kruskal’sMinimumSpanningTree)
    * [Maximum Increasing Subarray](/Greedy/MaximumIncreasingSubarray)
    * [Minimum Coins](/Greedy/MinimumCoins)
    * [Odd Sum Subsequence](/Greedy/OddSumSubsequence)
