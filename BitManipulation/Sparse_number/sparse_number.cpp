@@ -18,5 +18,6 @@ int main()
 { 
     int n;
     cin>>n;
+    cout<<checkSparse(n)<<endl;
     return 0; 
 } 
