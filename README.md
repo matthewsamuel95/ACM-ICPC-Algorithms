@@ -20,180 +20,224 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 #### If you wish to contribute, please refer to [the contributor guidelines](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md).
 
 **Table of Contents :**
-.
- * [BackTracking](./BackTracking)
-   * [Hamilton Path](./BackTracking/Hamilton Path)
-   * [KnightsTour](./BackTracking/KnightsTour)
-   * [NQueens](./BackTracking/NQueens)
-   * [RatInAMaze](./BackTracking/RatInAMaze)
-   * [SudokuAlgorithm](./BackTracking/SudokuAlgorithm)
- * [BFS](./BFS)
-   * [bfs.cpp](./BFS/bfs.cpp)
-   * [bfs.java](./BFS/bfs.java)
-   * [bfs.py](./BFS/bfs.py)
-   * [Java](./BFS/Java)
-   * [README.md](./BFS/README.md)
- * [BitManipulation](./BitManipulation)
-   * [Checking_power_of_2](./BitManipulation/Checking_power_of_2)
-   * [count_ones](./BitManipulation/count_ones)
-   * [divide_integers](./BitManipulation/divide_integers)
-   * [even_odd](./BitManipulation/even_odd)
-   * [print_subsets](./BitManipulation/print_subsets)
-   * [reverse_bits](./BitManipulation/reverse_bits)
-   * [Set_kth_bit](./BitManipulation/Set_kth_bit)
-   * [single_number](./BitManipulation/single_number)
-   * [Sparse_number](./BitManipulation/Sparse_number)
-   * [swap_bits](./BitManipulation/swap_bits)
- * [BST](./BST)
-   * [bst.cpp](./BST/bst.cpp)
-   * [python](./BST/python)
- * [CONTRIBUTING.md](./CONTRIBUTING.md)
- * [Data Structures](./Data Structures)
-   * [disjointset](./Data Structures/disjointset)
-   * [DoublyLinkedList](./Data Structures/DoublyLinkedList)
-   * [Fenwick_tree](./Data Structures/Fenwick_tree)
-   * [LCA](./Data Structures/LCA)
-   * [Linked List](./Data Structures/Linked List)
-   * [Queue](./Data Structures/Queue)
-   * [QueueFromStack_StackFromQueue](./Data Structures/QueueFromStack_StackFromQueue)
-   * [Red Black Tree](./Data Structures/Red Black Tree)
-   * [Segment Tree](./Data Structures/Segment Tree)
-   * [SinglyLinkedList](./Data Structures/SinglyLinkedList)
-   * [Stack](./Data Structures/Stack)
-   * [Trie](./Data Structures/Trie)
- * [DFS](./DFS)
-   * [dfs.cpp](./DFS/dfs.cpp)
-   * [Java](./DFS/Java)
-   * [python](./DFS/python)
-   * [README.md](./DFS/README.md)
- * [DP](./DP)
-   * [Coin Change Problem](./DP/Coin Change Problem)
-   * [Collect_Max_Points](./DP/Collect_Max_Points)
-   * [EditDistance](./DP/EditDistance)
-   * [Fibonacci](./DP/Fibonacci)
-   * [Floyd Warshall Algorithm](./DP/Floyd Warshall Algorithm)
-   * [game_of_sum](./DP/game_of_sum)
-   * [Knapsack](./DP/Knapsack)
-   * [LCIS](./DP/LCIS)
-   * [LongestCommonSubsequence](./DP/LongestCommonSubsequence)
-   * [LongestIncreasingSubsequence](./DP/LongestIncreasingSubsequence)
-   * [Longest Palindrome Substring](./DP/Longest Palindrome Substring)
-   * [Longest Repeated Subsequence](./DP/Longest Repeated Subsequence)
-   * [MatrixChain_multiplication](./DP/MatrixChain_multiplication)
-   * [Maximum Sum Increasing Subsequence](./DP/Maximum Sum Increasing Subsequence)
-   * [Maximum Sum Without Adjacents](./DP/Maximum Sum Without Adjacents)
-   * [MinimumPathSum](./DP/MinimumPathSum)
-   * [NumberOfIslands](./DP/NumberOfIslands)
-   * [PrintNeatly](./DP/PrintNeatly)
-   * [ShortestUncommonSubsequence](./DP/ShortestUncommonSubsequence)
-   * [subset_sum problem](./DP/subset_sum problem)
- * [Graph](./Graph)
-   * [Articulation_points](./Graph/Articulation_points)
-   * [BellmanFordSSSP](./Graph/BellmanFordSSSP)
-   * [bridges](./Graph/bridges)
-   * [Centroid Decomposition](./Graph/Centroid Decomposition)
-   * [Detect_Cycle](./Graph/Detect_Cycle)
-   * [DialsAlgorithm](./Graph/DialsAlgorithm)
-   * [DijkstrasSPT](./Graph/DijkstrasSPT)
-   * [EulerPath](./Graph/EulerPath)
-   * [FloydWarshall](./Graph/FloydWarshall)
-   * [Graph_m_Coloring](./Graph/Graph_m_Coloring)
-   * [Johnson'sAlgorithm](./Graph/Johnson'sAlgorithm)
-   * [KruskalsMST](./Graph/KruskalsMST)
-   * [PrimsMST](./Graph/PrimsMST)
-   * [README.md](./Graph/README.md)
-   * [Sack](./Graph/Sack)
-   * [TarganSCC](./Graph/TarganSCC)
-   * [TopoSort](./Graph/TopoSort)
- * [Greedy](./Greedy)
-   * [ActivitySelection](./Greedy/ActivitySelection)
-   * [ContainerShip](./Greedy/ContainerShip)
-   * [EqualizingBitStrings](./Greedy/EqualizingBitStrings)
-   * [Gas Station](./Greedy/Gas Station)
-   * [Greedy_Graph_Coloring](./Greedy/Greedy_Graph_Coloring)
-   * [Huffman coding](./Greedy/Huffman coding)
-   * [Knapsack](./Greedy/Knapsack)
-   * [Kruskal’sMinimumSpanningTree](./Greedy/Kruskal’sMinimumSpanningTree)
-   * [MaximumIncreasingSubarray](./Greedy/MaximumIncreasingSubarray)
-   * [MinimumCoins](./Greedy/MinimumCoins)
-   * [OddSumSubsequence](./Greedy/OddSumSubsequence)
- * [Hashing](./Hashing)
-   * [2_Sum](./Hashing/2_Sum)
-   * [3_Sum](./Hashing/3_Sum)
-   * [4_Sum](./Hashing/4_Sum)
- * [Math](./Math)
-   * [2Sum](./Math/2Sum)
-   * [3Sum](./Math/3Sum)
-   * [3_Sum_square_complexity](./Math/3_Sum_square_complexity)
-   * [All factors of a given Number](./Math/All factors of a given Number)
-   * [Bézout's Coefficients](./Math/Bézout's Coefficients)
-   * [collatz_conjecture](./Math/collatz_conjecture)
-   * [Combinations](./Math/Combinations)
-   * [convuxhull](./Math/convuxhull)
-   * [eulers_totient_function](./Math/eulers_totient_function)
-   * [Factorization](./Math/Factorization)
-   * [factors](./Math/factors)
-   * [Fast Exponentiation with Mod](./Math/Fast Exponentiation with Mod)
-   * [floor_sqrt](./Math/floor_sqrt)
-   * [gcd](./Math/gcd)
-   * [histogram_area](./Math/histogram_area)
-   * [last_digit_exp](./Math/last_digit_exp)
-   * [log](./Math/log)
-   * [lowest_common_multiple](./Math/lowest_common_multiple)
-   * [Matrix_Power](./Math/Matrix_Power)
-   * [max_divisible_num](./Math/max_divisible_num)
-   * [max_sub_rectangle](./Math/max_sub_rectangle)
-   * [Max_Sub_Square](./Math/Max_Sub_Square)
-   * [miller_rabin_primality_test](./Math/miller_rabin_primality_test)
-   * [modular_multiplicative_inverse](./Math/modular_multiplicative_inverse)
-   * [NextPow2](./Math/NextPow2)
-   * [nthRoot](./Math/nthRoot)
-   * [pascal_row](./Math/pascal_row)
-   * [Power](./Math/Power)
-   * [Prime](./Math/Prime)
-   * [Randomized algorithms](./Math/Randomized algorithms)
-   * [Set](./Math/Set)
-   * [sieve_of_eratosthenes](./Math/sieve_of_eratosthenes)
-   * [squareroot](./Math/squareroot)
-   * [subset_sum](./Math/subset_sum)
-   * [sum_of_digits](./Math/sum_of_digits)
-   * [TowerofHanoi](./Math/TowerofHanoi)
-   * [truncated_square_root](./Math/truncated_square_root)
- * [NetworkFlow](./NetworkFlow)
-   * [Dinic](./NetworkFlow/Dinic)
-   * [EdmundKarp](./NetworkFlow/EdmundKarp)
-   * [FordFulkerson](./NetworkFlow/FordFulkerson)
-   * [GoldbergTarjan](./NetworkFlow/GoldbergTarjan)
- * [Search](./Search)
-   * [BinarySearch](./Search/BinarySearch)
-   * [FibonacciSearch](./Search/FibonacciSearch)
-   * [hashing](./Search/hashing)
-   * [JumpSearch](./Search/JumpSearch)
-   * [LinearSearch](./Search/LinearSearch)
-   * [TernarySearch](./Search/TernarySearch)
- * [Sorting](./Sorting)
-   * [bubble sort](./Sorting/bubble sort)
-   * [CountingSort](./Sorting/CountingSort)
-   * [HeapSort](./Sorting/HeapSort)
-   * [IndexSort](./Sorting/IndexSort)
-   * [InsertionSort](./Sorting/InsertionSort)
-   * [MergeSort](./Sorting/MergeSort)
-   * [Pancake sorting](./Sorting/Pancake sorting)
-   * [QuickSort](./Sorting/QuickSort)
-   * [RadixSort](./Sorting/RadixSort)
-   * [SelectionSort](./Sorting/SelectionSort)
-   * [ShellSort](./Sorting/ShellSort)
- * [String](./String)
-   * [Anagram](./String/Anagram)
-   * [Balanced Parentheses](./String/Balanced Parentheses)
-   * [Hamming distance](./String/Hamming distance)
-   * [KMP](./String/KMP)
-   * [Palindrome](./String/Palindrome)
-   * [String Automaton](./String/String Automaton)
-   * [String Matching](./String/String Matching)
-   * [Substring](./String/Substring)
-   * [Top_K_Frequent_Words](./String/Top_K_Frequent_Words)
-   * [top_k_frequent_words_in_java](./String/top_k_frequent_words_in_java)
-   * [Uncompressing_Strings](./String/Uncompressing_Strings)
- * [README.md](./README.md)
- * [script](./script)
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="Author" content="Made by 'tree'">
+ <meta name="GENERATOR" content="$Version: $ tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
+ <title>Directory Tree</title>
+ <style type="text/css">
+  <!-- 
+  BODY { font-family : ariel, monospace, sans-serif; }
+  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
+  B { font-weight: normal; color: black; background-color: transparent;}
+  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  background-color: transparent;}
+  .FIFO  { color: purple; background-color: transparent;}
+  .CHAR  { color: yellow; background-color: transparent;}
+  .DIR   { color: blue;   background-color: transparent;}
+  .BLOCK { color: yellow; background-color: transparent;}
+  .LINK  { color: aqua;   background-color: transparent;}
+  .SOCK  { color: fuchsia;background-color: transparent;}
+  .EXEC  { color: green;  background-color: transparent;}
+  -->
+ </style></head>
+<body>
+	<h1>Directory Tree</h1><p>
+	<a href="root">root</a><br>
+	├── <a href="root/BackTracking/">BackTracking</a><br>
+	│   ├── <a href="root/BackTracking/Hamilton%20Path/">Hamilton Path</a><br>
+	│   ├── <a href="root/BackTracking/KnightsTour/">KnightsTour</a><br>
+	│   ├── <a href="root/BackTracking/NQueens/">NQueens</a><br>
+	│   ├── <a href="root/BackTracking/RatInAMaze/">RatInAMaze</a><br>
+	│   └── <a href="root/BackTracking/SudokuAlgorithm/">SudokuAlgorithm</a><br>
+	├── <a href="root/BFS/">BFS</a><br>
+	│   ├── <a href="root/BFS/bfs.cpp">bfs.cpp</a><br>
+	│   ├── <a href="root/BFS/bfs.java">bfs.java</a><br>
+	│   ├── <a href="root/BFS/bfs.py">bfs.py</a><br>
+	│   ├── <a href="root/BFS/Java/">Java</a><br>
+	│   └── <a href="root/BFS/README.md">README.md</a><br>
+	├── <a href="root/BitManipulation/">BitManipulation</a><br>
+	│   ├── <a href="root/BitManipulation/Checking_power_of_2/">Checking_power_of_2</a><br>
+	│   ├── <a href="root/BitManipulation/count_ones/">count_ones</a><br>
+	│   ├── <a href="root/BitManipulation/divide_integers/">divide_integers</a><br>
+	│   ├── <a href="root/BitManipulation/even_odd/">even_odd</a><br>
+	│   ├── <a href="root/BitManipulation/print_subsets/">print_subsets</a><br>
+	│   ├── <a href="root/BitManipulation/reverse_bits/">reverse_bits</a><br>
+	│   ├── <a href="root/BitManipulation/Set_kth_bit/">Set_kth_bit</a><br>
+	│   ├── <a href="root/BitManipulation/single_number/">single_number</a><br>
+	│   ├── <a href="root/BitManipulation/Sparse_number/">Sparse_number</a><br>
+	│   └── <a href="root/BitManipulation/swap_bits/">swap_bits</a><br>
+	├── <a href="root/BST/">BST</a><br>
+	│   ├── <a href="root/BST/bst.cpp">bst.cpp</a><br>
+	│   └── <a href="root/BST/python/">python</a><br>
+	├── <a href="root/CONTRIBUTING.md">CONTRIBUTING.md</a><br>
+	├── <a href="root/Data%20Structures/">Data Structures</a><br>
+	│   ├── <a href="root/Data%20Structures/disjointset/">disjointset</a><br>
+	│   ├── <a href="root/Data%20Structures/DoublyLinkedList/">DoublyLinkedList</a><br>
+	│   ├── <a href="root/Data%20Structures/Fenwick_tree/">Fenwick_tree</a><br>
+	│   ├── <a href="root/Data%20Structures/LCA/">LCA</a><br>
+	│   ├── <a href="root/Data%20Structures/Linked%20List/">Linked List</a><br>
+	│   ├── <a href="root/Data%20Structures/Queue/">Queue</a><br>
+	│   ├── <a href="root/Data%20Structures/QueueFromStack_StackFromQueue/">QueueFromStack_StackFromQueue</a><br>
+	│   ├── <a href="root/Data%20Structures/Red%20Black%20Tree/">Red Black Tree</a><br>
+	│   ├── <a href="root/Data%20Structures/Segment%20Tree/">Segment Tree</a><br>
+	│   ├── <a href="root/Data%20Structures/SinglyLinkedList/">SinglyLinkedList</a><br>
+	│   ├── <a href="root/Data%20Structures/Stack/">Stack</a><br>
+	│   └── <a href="root/Data%20Structures/Trie/">Trie</a><br>
+	├── <a href="root/DFS/">DFS</a><br>
+	│   ├── <a href="root/DFS/dfs.cpp">dfs.cpp</a><br>
+	│   ├── <a href="root/DFS/Java/">Java</a><br>
+	│   ├── <a href="root/DFS/python/">python</a><br>
+	│   └── <a href="root/DFS/README.md">README.md</a><br>
+	├── <a href="root/DP/">DP</a><br>
+	│   ├── <a href="root/DP/Coin%20Change%20Problem/">Coin Change Problem</a><br>
+	│   ├── <a href="root/DP/Collect_Max_Points/">Collect_Max_Points</a><br>
+	│   ├── <a href="root/DP/EditDistance/">EditDistance</a><br>
+	│   ├── <a href="root/DP/Fibonacci/">Fibonacci</a><br>
+	│   ├── <a href="root/DP/Floyd%20Warshall%20Algorithm/">Floyd Warshall Algorithm</a><br>
+	│   ├── <a href="root/DP/game_of_sum/">game_of_sum</a><br>
+	│   ├── <a href="root/DP/Knapsack/">Knapsack</a><br>
+	│   ├── <a href="root/DP/LCIS/">LCIS</a><br>
+	│   ├── <a href="root/DP/LongestCommonSubsequence/">LongestCommonSubsequence</a><br>
+	│   ├── <a href="root/DP/LongestIncreasingSubsequence/">LongestIncreasingSubsequence</a><br>
+	│   ├── <a href="root/DP/Longest%20Palindrome%20Substring/">Longest Palindrome Substring</a><br>
+	│   ├── <a href="root/DP/Longest%20Repeated%20Subsequence/">Longest Repeated Subsequence</a><br>
+	│   ├── <a href="root/DP/MatrixChain_multiplication/">MatrixChain_multiplication</a><br>
+	│   ├── <a href="root/DP/Maximum%20Sum%20Increasing%20Subsequence/">Maximum Sum Increasing Subsequence</a><br>
+	│   ├── <a href="root/DP/Maximum%20Sum%20Without%20Adjacents/">Maximum Sum Without Adjacents</a><br>
+	│   ├── <a href="root/DP/MinimumPathSum/">MinimumPathSum</a><br>
+	│   ├── <a href="root/DP/NumberOfIslands/">NumberOfIslands</a><br>
+	│   ├── <a href="root/DP/PrintNeatly/">PrintNeatly</a><br>
+	│   ├── <a href="root/DP/ShortestUncommonSubsequence/">ShortestUncommonSubsequence</a><br>
+	│   └── <a href="root/DP/subset_sum%20problem/">subset_sum problem</a><br>
+	├── <a href="root/Graph/">Graph</a><br>
+	│   ├── <a href="root/Graph/Articulation_points/">Articulation_points</a><br>
+	│   ├── <a href="root/Graph/BellmanFordSSSP/">BellmanFordSSSP</a><br>
+	│   ├── <a href="root/Graph/bridges/">bridges</a><br>
+	│   ├── <a href="root/Graph/Centroid%20Decomposition/">Centroid Decomposition</a><br>
+	│   ├── <a href="root/Graph/Detect_Cycle/">Detect_Cycle</a><br>
+	│   ├── <a href="root/Graph/DialsAlgorithm/">DialsAlgorithm</a><br>
+	│   ├── <a href="root/Graph/DijkstrasSPT/">DijkstrasSPT</a><br>
+	│   ├── <a href="root/Graph/EulerPath/">EulerPath</a><br>
+	│   ├── <a href="root/Graph/FloydWarshall/">FloydWarshall</a><br>
+	│   ├── <a href="root/Graph/Graph_m_Coloring/">Graph_m_Coloring</a><br>
+	│   ├── <a href="root/Graph/Johnson'sAlgorithm/">Johnson'sAlgorithm</a><br>
+	│   ├── <a href="root/Graph/KruskalsMST/">KruskalsMST</a><br>
+	│   ├── <a href="root/Graph/PrimsMST/">PrimsMST</a><br>
+	│   ├── <a href="root/Graph/README.md">README.md</a><br>
+	│   ├── <a href="root/Graph/Sack/">Sack</a><br>
+	│   ├── <a href="root/Graph/TarganSCC/">TarganSCC</a><br>
+	│   └── <a href="root/Graph/TopoSort/">TopoSort</a><br>
+	├── <a href="root/Greedy/">Greedy</a><br>
+	│   ├── <a href="root/Greedy/ActivitySelection/">ActivitySelection</a><br>
+	│   ├── <a href="root/Greedy/ContainerShip/">ContainerShip</a><br>
+	│   ├── <a href="root/Greedy/EqualizingBitStrings/">EqualizingBitStrings</a><br>
+	│   ├── <a href="root/Greedy/Gas%20Station/">Gas Station</a><br>
+	│   ├── <a href="root/Greedy/Greedy_Graph_Coloring/">Greedy_Graph_Coloring</a><br>
+	│   ├── <a href="root/Greedy/Huffman%20coding/">Huffman coding</a><br>
+	│   ├── <a href="root/Greedy/Knapsack/">Knapsack</a><br>
+	│   ├── <a href="root/Greedy/Kruskal%E2%80%99sMinimumSpanningTree/">Kruskal’sMinimumSpanningTree</a><br>
+	│   ├── <a href="root/Greedy/MaximumIncreasingSubarray/">MaximumIncreasingSubarray</a><br>
+	│   ├── <a href="root/Greedy/MinimumCoins/">MinimumCoins</a><br>
+	│   └── <a href="root/Greedy/OddSumSubsequence/">OddSumSubsequence</a><br>
+	├── <a href="root/Hashing/">Hashing</a><br>
+	│   ├── <a href="root/Hashing/2_Sum/">2_Sum</a><br>
+	│   ├── <a href="root/Hashing/3_Sum/">3_Sum</a><br>
+	│   └── <a href="root/Hashing/4_Sum/">4_Sum</a><br>
+	├── <a href="root/Math/">Math</a><br>
+	│   ├── <a href="root/Math/2Sum/">2Sum</a><br>
+	│   ├── <a href="root/Math/3Sum/">3Sum</a><br>
+	│   ├── <a href="root/Math/3_Sum_square_complexity/">3_Sum_square_complexity</a><br>
+	│   ├── <a href="root/Math/All%20factors%20of%20a%20given%20Number/">All factors of a given Number</a><br>
+	│   ├── <a href="root/Math/B%C3%A9zout's%20Coefficients/">Bézout's Coefficients</a><br>
+	│   ├── <a href="root/Math/collatz_conjecture/">collatz_conjecture</a><br>
+	│   ├── <a href="root/Math/Combinations/">Combinations</a><br>
+	│   ├── <a href="root/Math/convuxhull/">convuxhull</a><br>
+	│   ├── <a href="root/Math/eulers_totient_function/">eulers_totient_function</a><br>
+	│   ├── <a href="root/Math/Factorization/">Factorization</a><br>
+	│   ├── <a href="root/Math/factors/">factors</a><br>
+	│   ├── <a href="root/Math/Fast%20Exponentiation%20with%20Mod/">Fast Exponentiation with Mod</a><br>
+	│   ├── <a href="root/Math/floor_sqrt/">floor_sqrt</a><br>
+	│   ├── <a href="root/Math/gcd/">gcd</a><br>
+	│   ├── <a href="root/Math/histogram_area/">histogram_area</a><br>
+	│   ├── <a href="root/Math/last_digit_exp/">last_digit_exp</a><br>
+	│   ├── <a href="root/Math/log/">log</a><br>
+	│   ├── <a href="root/Math/lowest_common_multiple/">lowest_common_multiple</a><br>
+	│   ├── <a href="root/Math/Matrix_Power/">Matrix_Power</a><br>
+	│   ├── <a href="root/Math/max_divisible_num/">max_divisible_num</a><br>
+	│   ├── <a href="root/Math/max_sub_rectangle/">max_sub_rectangle</a><br>
+	│   ├── <a href="root/Math/Max_Sub_Square/">Max_Sub_Square</a><br>
+	│   ├── <a href="root/Math/miller_rabin_primality_test/">miller_rabin_primality_test</a><br>
+	│   ├── <a href="root/Math/modular_multiplicative_inverse/">modular_multiplicative_inverse</a><br>
+	│   ├── <a href="root/Math/NextPow2/">NextPow2</a><br>
+	│   ├── <a href="root/Math/nthRoot/">nthRoot</a><br>
+	│   ├── <a href="root/Math/pascal_row/">pascal_row</a><br>
+	│   ├── <a href="root/Math/Power/">Power</a><br>
+	│   ├── <a href="root/Math/Prime/">Prime</a><br>
+	│   ├── <a href="root/Math/Randomized%20algorithms/">Randomized algorithms</a><br>
+	│   ├── <a href="root/Math/Set/">Set</a><br>
+	│   ├── <a href="root/Math/sieve_of_eratosthenes/">sieve_of_eratosthenes</a><br>
+	│   ├── <a href="root/Math/squareroot/">squareroot</a><br>
+	│   ├── <a href="root/Math/subset_sum/">subset_sum</a><br>
+	│   ├── <a href="root/Math/sum_of_digits/">sum_of_digits</a><br>
+	│   ├── <a href="root/Math/TowerofHanoi/">TowerofHanoi</a><br>
+	│   └── <a href="root/Math/truncated_square_root/">truncated_square_root</a><br>
+	├── <a href="root/NetworkFlow/">NetworkFlow</a><br>
+	│   ├── <a href="root/NetworkFlow/Dinic/">Dinic</a><br>
+	│   ├── <a href="root/NetworkFlow/EdmundKarp/">EdmundKarp</a><br>
+	│   ├── <a href="root/NetworkFlow/FordFulkerson/">FordFulkerson</a><br>
+	│   └── <a href="root/NetworkFlow/GoldbergTarjan/">GoldbergTarjan</a><br>
+	├── <a href="root/README.md">README.md</a><br>
+	├── <a href="root/script">script</a><br>
+	├── <a href="root/Search/">Search</a><br>
+	│   ├── <a href="root/Search/BinarySearch/">BinarySearch</a><br>
+	│   ├── <a href="root/Search/FibonacciSearch/">FibonacciSearch</a><br>
+	│   ├── <a href="root/Search/hashing/">hashing</a><br>
+	│   ├── <a href="root/Search/JumpSearch/">JumpSearch</a><br>
+	│   ├── <a href="root/Search/LinearSearch/">LinearSearch</a><br>
+	│   └── <a href="root/Search/TernarySearch/">TernarySearch</a><br>
+	├── <a href="root/Sorting/">Sorting</a><br>
+	│   ├── <a href="root/Sorting/bubble%20sort/">bubble sort</a><br>
+	│   ├── <a href="root/Sorting/CountingSort/">CountingSort</a><br>
+	│   ├── <a href="root/Sorting/HeapSort/">HeapSort</a><br>
+	│   ├── <a href="root/Sorting/IndexSort/">IndexSort</a><br>
+	│   ├── <a href="root/Sorting/InsertionSort/">InsertionSort</a><br>
+	│   ├── <a href="root/Sorting/MergeSort/">MergeSort</a><br>
+	│   ├── <a href="root/Sorting/Pancake%20sorting/">Pancake sorting</a><br>
+	│   ├── <a href="root/Sorting/QuickSort/">QuickSort</a><br>
+	│   ├── <a href="root/Sorting/RadixSort/">RadixSort</a><br>
+	│   ├── <a href="root/Sorting/SelectionSort/">SelectionSort</a><br>
+	│   └── <a href="root/Sorting/ShellSort/">ShellSort</a><br>
+	└── <a href="root/String/">String</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/Anagram/">Anagram</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/Balanced%20Parentheses/">Balanced Parentheses</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/Hamming%20distance/">Hamming distance</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/KMP/">KMP</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/Palindrome/">Palindrome</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/String%20Automaton/">String Automaton</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/String%20Matching/">String Matching</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/Substring/">Substring</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/Top_K_Frequent_Words/">Top_K_Frequent_Words</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="root/String/top_k_frequent_words_in_java/">top_k_frequent_words_in_java</a><br>
+	&nbsp;&nbsp;&nbsp; └── <a href="root/String/Uncompressing_Strings/">Uncompressing_Strings</a><br>
+	<br><br>
+	</p>
+	<p>
+	<br><br>
+	</p>
+	<hr>
+	<p class="VERSION">
+		 tree v1.7.0 © 1996 - 2014 by Steve Baker and Thomas Moore <br>
+		 HTML output hacked and copyleft © 1998 by Francesc Rocher <br>
+		 JSON output hacked and copyleft © 2014 by Florian Sesser <br>
+		 Charsets / OS/2 support © 2001 by Kyosuke Tokoro
+	</p>
+</body>
+</html>
