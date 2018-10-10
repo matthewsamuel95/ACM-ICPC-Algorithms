@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#File: script
+# echo "${tree}" >> README.md
+
+# tree=$(tree -L 2 -tf --noreport -H . |
+#     sed -e 's/| \+/  /g' -e 's/[|`]-\+/ */g'
+#    's/ /%20/g' /
+#    -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
+
+tree=$(tree -L 2 -tf --noreport --charset ascii -H . |
+       sed -e 's/[|`]-\+/ \&#8227;/g' \
+       -e 's/| \+/ \&nbsp; /g')
+
+printf"${tree}"
