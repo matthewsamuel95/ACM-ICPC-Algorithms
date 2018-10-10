@@ -11,8 +11,8 @@ struct node {
 
 // Insert a number n to node's val, and pointer node's left and right
 // branch to NULL
-struct node * insert(int n) {
-  struct node * temp = new struct node();
+  node * insert(int n) {
+  node * temp = new node();
   temp -> val = n;
   temp -> left = NULL;
   temp -> right = NULL;
@@ -21,7 +21,7 @@ struct node * insert(int n) {
 
 // Inorder permutation, permutate from left to root to right,
 // accordingly
-void inorder(struct node * root) {
+void inorder(node* root) {
   if (root != NULL) {
     inorder(root -> left);
     cout << root -> val << " ";
@@ -31,7 +31,7 @@ void inorder(struct node * root) {
 
 // Postorder permutation, permutate from left to right to root,
 // accoringly
-void postorder(struct node * root) {
+void postorder(node * root) {
   if (root != NULL) {
     postorder(root -> right);
     postorder(root -> left);
