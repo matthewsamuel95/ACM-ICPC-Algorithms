@@ -86,6 +86,14 @@ bool find(struct node * root, int key) {
   } else
     return 0;
 }
+//This function counts the total number  of nodes in a tree
+int countNodes(struct node * root){
+  if(root==NULL)
+    return 0;
+  else
+    return 1+ count(root->left) + count(root->right);
+}
+
 int main() {
 	// Init a empty node bst
   struct node * bst = NULL;
@@ -108,6 +116,7 @@ int main() {
 	// Preorder permutate from root -> left -> right
   preorder(bst);
   cout << endl;
-
+  // Count total number of nodes in the tree
+  cout << countNodes(root);
   return 0;
 }

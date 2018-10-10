@@ -1,16 +1,16 @@
 # ACM-ICPC Algorithms
 
 ### Introduction to ACM-ICPC
-ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world. 
+ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.
 
-Alternately, we can say that the [International Collegiate Programming Contest](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) is an algorithmic programming contest for college students. 
-- Teams of three, representing their university, work to solve real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. 
-- Through training and competition, teams challenge each other to raise the bar on what could be done. 
-- Quite simply, it is the oldest, largest, and most prestigious programming contest in the world. 
+Alternately, we can say that the [International Collegiate Programming Contest](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) is an algorithmic programming contest for college students.
+- Teams of three, representing their university, work to solve real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure.
+- Through training and competition, teams challenge each other to raise the bar on what could be done.
+- Quite simply, it is the oldest, largest, and most prestigious programming contest in the world.
 
-### Purpose of ACM-ICPC Algorithms 
+### Purpose of ACM-ICPC Algorithms
 ACM-ICPC Algorithms is a collection of important algorithms and data structures used to solve questions in this worldwide olympiad. It aims to provide solutions in various languages as per [ICPC 2018 WF](https://icpc.baylor.edu/worldfinals/programming-environment), including:
--  C 
+-  C
 -  C++
 -  Java
 -  Python (2 & 3)
@@ -197,3 +197,4 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
          &nbsp; &#8227; <a href="./String/Uncompressing_Strings/">Uncompressing_Strings</a><br>
          &#8227; <a href="./script">script</a><br>
          &#8227; <a href="./README.md">README.md</a><br>
+
