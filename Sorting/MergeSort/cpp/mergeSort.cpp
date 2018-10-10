@@ -41,6 +41,8 @@ void print(vector<int> &a, int n){
 	}cout<<endl;
 }
 int main(){
+  cout.sync_with_stdio(false);
+
 	srand(time(0));
 	vector<int> a;
 	int n=10;

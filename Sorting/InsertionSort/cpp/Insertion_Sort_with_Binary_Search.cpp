@@ -35,6 +35,8 @@ void insertion_sort(int arr[],int n)
 	}
 int main()
 {
+  cout.sync_with_stdio(false);
+
 	int n;
 	cin>>n;
 	int *arr=new int[n+1];

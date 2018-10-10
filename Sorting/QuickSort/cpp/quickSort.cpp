@@ -28,6 +28,8 @@ void quickSort(vector<int> &a, int l, int h){
 }
 
 int main(){
+  cout.sync_with_stdio(false);
+
 	srand(time(0));
 	vector<int> a;
 	int n=10;
