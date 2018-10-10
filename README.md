@@ -20,9 +20,9 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 #### If you wish to contribute, please refer to [the contributor guidelines](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md).
 
 **Table of Contents :**
-<<<<<<< HEAD
+
 <p>
-	<a href=".">.</a><br>
+	<a href=".">ACM-ICPC-Algorithms</a><br>
 	├── <a href="./BackTracking/">BackTracking</a><br>
 	│   ├── <a href="./BackTracking/Hamilton%20Path/">Hamilton Path</a><br>
 	│   ├── <a href="./BackTracking/KnightsTour/">KnightsTour</a><br>
