@@ -5,6 +5,7 @@
 int main()
 {
     int a,b,temp ;
+    printf("Enter value for a and b variable") ;
     scanf("%d",&a) ;   //user input for a variable 
     scanf("%d",&b) ;   //user input for b variable
     temp=a ;           // {
