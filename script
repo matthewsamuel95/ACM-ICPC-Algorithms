@@ -2,8 +2,12 @@
 
 #File: script
 
-tree=$(tree -L 2 -tf --noreport -I '*~' --charset ascii $1 |
-       sed -e 's/| \+/  /g' -e 's/[|`]-\+/ */g' -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
+# tree=$(tree -L 2 -tf --noreport --charset ascii |
+#        sed -e 's/| \+/  /g' \
+#        -e 's/[|`]-\+/ */g' \
+#        's/ /%20/g' /
+#        -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
 
+tree=$(tree -L 2 --noreport -H root)
 echo "${tree}" >> README.md
 printf "${tree}"
