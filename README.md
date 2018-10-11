@@ -167,6 +167,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Radix Sort](/Sorting/RadixSort)
    * [Selection Sort](/Sorting/SelectionSort)
    * [Shell Sort](/Sorting/ShellSort)
+   * [Bucket Sort](/Sorting/BucketSort)
 * [String Algorithms](/String)
    * [Anagram](/String/Anagram)
    * [Balanced Parenthesis](/String/Balanced%20Parentheses)
