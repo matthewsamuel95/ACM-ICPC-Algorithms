@@ -11,6 +11,10 @@ If you have used a different language then put it in Math/{Name of Problem}/{Lan
 Similarly, if the topic is not related to Math, then put it in its closest related folder (e.g. Sorting topics should go under the "Sorting" folder.   
 
 
+If including new algorithms: 
+* Add a README.md in the relative folder of the file placement, discussing the algorithm. 
+* Update the table of contents in [README.md](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/README.md)
+
 
 ## Pre-requisites:
 Install Git: 
