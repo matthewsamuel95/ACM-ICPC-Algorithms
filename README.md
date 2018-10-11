@@ -118,6 +118,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Factorization](/Math/Factorization)
    * [Factors](/Math/factors)
    * [Fast Exponentiation with Mod](/Math/Fast%20Exponentiation%20with%20Mod)
+   * [Fibonacci Series](/Math/Fibonacci_number)
    * [Floor Square Root](/Math/floor_sqrt)
    * [Greatest Common Divisor](/Math/gcd)
    * [Histogram Area](/Math/histogram_area)
