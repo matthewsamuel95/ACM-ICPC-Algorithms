@@ -64,7 +64,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Game Of Sum](/DP/game_of_sum)
    * [Knapsack](/DP/Knapsack)
    * [Longest Palindrome Substring](/DP/Longest%20Palindrome%20Substring)
-   * [Longest Common Independent Subsequence](/DP/LCIS)
+   * [Longest Common Increasing Subsequence](/DP/LCIS)
    * [Longest Common Subsequence](/DP/LongestCommonSubsequence)
    * [Longest Increasing Subsequence](/DP/LongestIncreasingSubsequence)
    * [Longest Repeated Subsequence](/DP/Longest%20Repeated%20Subsequence)
