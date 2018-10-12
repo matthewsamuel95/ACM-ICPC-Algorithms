@@ -91,7 +91,23 @@ int countNodes(struct node * root){
   if(root==NULL)
     return 0;
   else
-    return 1+ count(root->left) + count(root->right);
+    return 1 + countNodes(root->left) + countNodes(root->right);
+}
+
+
+//This function calclulates the height of the binary search tree. 
+int height(struct node *root){
+  if(root==NULL)
+    return 0;
+  return 1 + max(height(root->left),height(root->right));
+}
+
+
+//This function calculates the diameter of the binary search tree.
+int diameter(struct node *root){
+  if(root == NULL)
+    return 0;
+  return max(1 + height(root->left) + height(root->right), max(diameter(root->left),diameter(root->right)));
 }
 
 int main() {
@@ -108,15 +124,23 @@ int main() {
   create(bst, 12);
   create(bst, 21);
 	// Inorder permutate from left -> root -> right
+  cout << "The Inorder traversal of the tree is : ";
   inorder(bst);
   cout << endl;
 	// Postorder permutate from left -> right -> root
+  cout << "The Postorder traversal of the tree is : ";
   postorder(bst);
   cout << endl;
 	// Preorder permutate from root -> left -> right
+  cout << "The Preorder traversal of the tree is : ";
   preorder(bst);
   cout << endl;
   // Count total number of nodes in the tree
-  cout << countNodes(root);
+  cout << "The number of nodes in the tree : ";
+  cout << countNodes(bst) << endl;
+  cout << "The height of the tree is : ";
+  cout << height(bst) << endl;
+  cout << "The diameter of the tree is : ";
+  cout << diameter(bst) << endl;
   return 0;
 }
