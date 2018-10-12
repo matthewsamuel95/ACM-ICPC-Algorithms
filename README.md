@@ -72,6 +72,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Max Sum Increasing Subsequence](/DP/Maximum%20Sum%20Increasing%20Subsequence)
    * [Minimum Path Sum](/DP/MinimumPathSum)
    * [Number Of Islands](/DP/NumberOfIslands)
+   * [Partition Problem](/DP/PartitionProblem)
    * [Print Neatly](/DP/PrintNeatly)
    * [Shortest Uncommon Subsequence](/DP/ShortestUncommonSubsequence)
    * [Subset Sum](/DP/subset%20sum%20problem)
