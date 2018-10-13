@@ -66,3 +66,16 @@ void quickSort(char A[], int si, int ei)
         quickSort(A, pi + 1, ei); 
     } 
 } 
+
+/* Driver program to test to print printDups*/
+int main() 
+{ 
+    char str1[] = "test"; 
+    char str2[] = "ttew"; 
+    if (areAnagram(str1, str2)) 
+      printf("The two strings are anagram of each other"); 
+    else
+      printf("The two strings are not anagram of each other"); 
+  
+    return 0; 
+} 
