@@ -1,5 +1,4 @@
-n="12345"
-sum=0
-for i in range(len(n)):
-    sum+=int(n[i])
-print(sum)
+n = "12345"
+
+digit_sum = sum(map(int, list(n)))
+print(digit_sum)
