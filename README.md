@@ -149,6 +149,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Edmund Karp](/NetworkFlow/EdmundKarp)
    * [Ford Fulkerson](/NetworkFlow/FordFulkerson)
    * [Goldberg Tarjan](/NetworkFlow/GoldbergTarjan)
+* [Pattern](/PrintGivenPattern/diamond)
 * [Search Algorithms](/Search)
    * [Binary Search](/Search/BinarySearch)
    * [Fibonacci Search](/Search/FibonacciSearch)
