@@ -4,7 +4,7 @@ using namespace std;
 //Longest Increasing Decreasing Subsequence
 int lidss(int n,int arr[])		
 {
-      if(n==0)
+     if(n==0)
         return 0;
 	    int lenI[n];
     	int lenD[n];
@@ -39,17 +39,17 @@ int lidss(int n,int arr[])
             }
         }
         
-        //calculate longest Increasing and then decreasing subsequence starting from each element
-	int max=1;
-	for(int i=0;i<n;i++)
-	{
-		int len=lenI[i]+lenD[i]-1;
-		if(max<len)
-		{
-			max=len;
-		}
-	}
-        return max;
+      //calculate longest Increasing and then decreasing subsequence starting from each element
+      int max=1;
+      for(int i=0;i<n;i++)
+      {
+        int len=lenI[i]+lenD[i]-1;
+        if(max<len)
+        {
+          max=len;
+        }
+      }
+      return max;
 }
 
 int main() {
