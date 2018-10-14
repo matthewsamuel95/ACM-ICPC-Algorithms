@@ -159,6 +159,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Jump Search](/Search/JumpSearch)
    * [Linear Search](/Search/LinearSearch)
    * [Ternary Search](/Search/TernarySearch)
+   * [Interpolation Search](/Search/InterpolationSearch) 
 * [Sorting Algorithms](/Sorting)
    * [Bubble Sort](/Sorting/bubble%20sort)
    * [Cocktail Shaker Sort](/Sorting/CocktailShakerSort)
