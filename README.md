@@ -76,6 +76,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Print Neatly](/DP/PrintNeatly)
    * [Shortest Uncommon Subsequence](/DP/ShortestUncommonSubsequence)
    * [Subset Sum](/DP/subset%20sum%20problem)
+   * [Longest Bitonic SubSequence](/DP/LongestBitonicSubseq)
 * [Graph Algorithms](/Graph)
    * [Articulation Points](/Graph/Articulation_points)
    * [Bellman Ford SSSP](/Graph/BellmanFordSSSP)
