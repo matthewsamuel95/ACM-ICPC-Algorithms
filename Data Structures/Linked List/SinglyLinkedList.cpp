@@ -48,6 +48,17 @@ void PrintLL(Node* head){
 	}
 	cout<<endl;
 }
+
+Node* middleElement(Node* head) {
+    Node* slowPtr = head;
+    Node* fastPtr = head;
+    while(fastPtr != nullptr && fastPtr->next != nullptr) {
+        slowPtr = slowPtr->next;
+        fastPtr = fastPtr->next->next;
+    }
+    return slowPtr;  
+}
+
 int main(){
 	//create the linked list
 	Node* head=takeInput();	
