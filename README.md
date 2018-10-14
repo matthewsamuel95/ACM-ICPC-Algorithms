@@ -145,6 +145,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Sum Of Digits](/Math/sum_of_digits)
    * [Tower Of Hanoi](/Math/TowerofHanoi)
    * [Truncated Square Root](/Math/truncated_square_root)
+   * [Calculate And Print All Permutations](/Math/AllPermutations)
 * [Network Flow](/NetworkFlow)
    * [Dinic](/NetworkFlow/Dinic)
    * [Edmund Karp](/NetworkFlow/EdmundKarp)
