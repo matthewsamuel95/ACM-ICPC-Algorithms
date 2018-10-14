@@ -14,7 +14,7 @@ public class InsertionSort {
         return input;
     }
     
-    	/* A utility function to print array of size n */
+    	/* A utility function(method) to print array of size n */
 	    static void printSortedArray(int arr[])
 	    {
 		      int n = arr.length;
