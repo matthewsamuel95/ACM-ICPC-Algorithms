@@ -15,8 +15,8 @@ i = 0
 for x in inp:
     arrPrint = []
     for b in inp:
-        if(is_anagram.is_anagram(str(x), str(b))):
-           arrPrint.append(b)
+        if (is_anagram.is_anagram(str(x), str(b))):
+            arrPrint.append(b)
     arrFinal.append(arrPrint)
     i = i + 1
 
@@ -24,12 +24,10 @@ aux = arrFinal[0][0]
 for i, j in enumerate(arrFinal[:-1]):
     try:
         compOne = j[0]
-        compTwo = arrFinal[i+1][0]
-        if(is_anagram.is_anagram(compOne, compTwo)):
+        compTwo = arrFinal[i + 1][0]
+        if (is_anagram.is_anagram(compOne, compTwo)):
             arrFinal.remove(j)
-    except:
+    except Exception:
         pass
 arrFinal.remove(arrFinal[0])
 print(arrFinal)
-
-    
