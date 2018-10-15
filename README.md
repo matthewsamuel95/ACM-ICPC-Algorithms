@@ -13,6 +13,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 -  C
 -  C++
 -  Java
+-  c#
 -  Python (2 & 3)
 -  Kotlin.
 ##### For more information, visit: **Official Website of [ICPC](https://icpc.baylor.edu/)**
