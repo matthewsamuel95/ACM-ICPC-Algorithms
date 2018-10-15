@@ -1,4 +1,5 @@
-# Selection Sort: Find the minimum value at each pass and move it to the beginning
+# Selection Sort: Find the minimum value at each pass and move it
+# to the beginning
 
 
 def SelectionSort(arr):
@@ -15,4 +16,4 @@ def SelectionSort(arr):
 
 if __name__ == "__main__":
     arr = [1, 5, 7, 2, 8, 3]
-    print SelectionSort(arr)  # [1, 2, 3, 5, 7, 8]
+    print(SelectionSort(arr))  # [1, 2, 3, 5, 7, 8]

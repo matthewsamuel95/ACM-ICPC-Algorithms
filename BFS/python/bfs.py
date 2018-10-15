@@ -16,7 +16,7 @@ class Graph():
 
         while queue:
             currentNode = queue.pop(0)
-            print currentNode
+            print(currentNode)
 
             children = self.graph[currentNode]
             for i in range(len(children)):
@@ -39,5 +39,5 @@ if __name__ == '__main__':
     graph.addEdge(3, 2)
     graph.addEdge(3, 4)
 
-    print "Breadth First Search starting from vertex 0:"
+    print("Breadth First Search starting from vertex 0:")
     graph.BFS(0)
