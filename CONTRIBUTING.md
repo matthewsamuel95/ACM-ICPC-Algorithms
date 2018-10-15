@@ -4,7 +4,7 @@ For example, math problems should go in Math/{Problem Title}/{Your File Name}
 
 Make sure your file is saved in your programming language's file extension (e.g. *.java, *.c, *.py, etc.) 
 
-If a title of a problem already exists and you have another solution, upload your solution within the same subfolder.
+ If a title of a problem already exists and you have another solution, upload your solution within the same subfolder.
 
 If you have used a different language then put it in Math/{Name of Problem}/{Language}/{File Name}. 
 
