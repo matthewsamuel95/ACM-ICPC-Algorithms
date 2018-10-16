@@ -112,7 +112,6 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [2 Sum](/Hashing/2_Sum)
    * [3 Sum](/Hashing/3_Sum)
    * [4 Sum](/Hashing/4_Sum)
-* [Input](/Input)
 * [Mathematical Algorithms](/Math)
    * [3 Sum square complexity](/Math/3_Sum_square_complexity)
    * [Factors Of A Given Number](/Math/All%20factors%20of%20a%20given%20Number)
