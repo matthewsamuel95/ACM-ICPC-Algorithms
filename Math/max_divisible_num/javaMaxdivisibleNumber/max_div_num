@@ -1,0 +1,21 @@
+import java.io.*; 
+import java.lang.*; 
+  
+class MaxDivisibleNumber { 
+    public static double answer(double X, double K) 
+    { 
+        double i = 10; 
+        double MAX = Math.pow(i, K) - 1;  
+        return (MAX - (MAX % X)); 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+  
+        double X = 30; 
+        double K = 3; 
+  
+        System.out.println((int)answer(X, K)); 
+    } 
+} 
+  
