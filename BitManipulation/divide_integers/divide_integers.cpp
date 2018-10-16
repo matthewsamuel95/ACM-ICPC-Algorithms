@@ -21,6 +21,7 @@ int divide(int A, int B) {
         A-=B;
         ans++;
     }
+
     return (int)(ans*sign);
 }
 
@@ -29,5 +30,6 @@ int main()
 	int a,b,x;
 	scanf("%d %d",&a,&b);
 	printf("Division is %d\n",divide(a,b));
+
 	return 0;
 }
