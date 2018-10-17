@@ -10,11 +10,14 @@ class heap {
   int * harr;
   int capacity;
   public:
-    heap(int cap) {
+  heap(int cap) {
       capacity = cap;
       heap_size = 0;
       harr = new int[cap];
     }
+  ~heap(){
+    cout<<"Releasing the memory\n";
+  }
   int parent(int i) {
     return (i - 1) / 2;
   }
