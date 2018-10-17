@@ -55,20 +55,7 @@ B[0].push_back(src);
     dist[src].first = 0; 
    int idx = 0; 
 
-    while (1) 
-
-    { 
-
-        
-
-        while (B[idx].size() == 0 && idx < W*V) 
-
-            idx++; 
-
-  
-
-
-        if (idx == W * V) 
+    
 
             break; 
 int u = B[idx].front(); 
