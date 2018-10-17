@@ -10,7 +10,7 @@ var binary_search = find_variable => {
 
   while(head <= rule){
 
-    let middle = initial + (rule - initial) / 2;
+    let middle = head + (rule - head) / 2;
 
     if(arrays[middle] == find_variable)
       return middle
