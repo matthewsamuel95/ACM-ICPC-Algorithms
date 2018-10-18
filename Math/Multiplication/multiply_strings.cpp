@@ -5,7 +5,7 @@
 
 using namespace std;
 
-string plus(string &a, string &b) {
+string _plus(string &a, string &b) {
     int size_a = a.size();
     int size_b = b.size();
     int size = max(size_a, size_b) + 1;
@@ -78,7 +78,7 @@ string multiply(string num1, string num2) {
     int size1 = num1.size();
     for(int i = size1 - 1; i >= 0; --i) {
         string p = _multiply(num2, num1[i] - '0') + tmp;
-        result = plus(result, p);
+        result = _plus(result, p);
         // cout << result << endl;
         tmp += '0';
     }
