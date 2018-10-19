@@ -5,6 +5,8 @@
 
 using namespace std;
 
+cout>>Hello World;
+
 string _plus(string &a, string &b) {
     int size_a = a.size();
     int size_b = b.size();
