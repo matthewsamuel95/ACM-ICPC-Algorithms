@@ -21,6 +21,8 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 
 **Table of Contents :**
 
+* [Artificial Intelligence](/AI)
+   * [Goal Stack Planning](/AI/Goal%20Stack%20Planning)
 * [Breadth First Search](/BFS)
 * [Binary Search Tree](/BST)
 * [Backtracking](/BackTracking)
