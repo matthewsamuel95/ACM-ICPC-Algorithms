@@ -1,5 +1,9 @@
 def reverse(string):
-  return string[::-1]
+  s=""
+  for i in range(0,len(string)):
+    s+=string[len(string)-i-1]
+    
+ return s
   
 if __name__ == '__main__':
   print(reverse("reverse")) # Output "esrever"
