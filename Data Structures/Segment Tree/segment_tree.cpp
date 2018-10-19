@@ -5,7 +5,10 @@ using namespace std;
 #define MAX (int)10e6
 
 int values[MAX], tree[MAX * 4];
-
+void segmenttree_function(int a,int b){
+    return (a+b);
+    //Change based on requirement
+}
 int read(int id, int l, int r, int x, int y){
     if(l > y || r < x) return 0;
     else{
@@ -14,7 +17,7 @@ int read(int id, int l, int r, int x, int y){
             int mid = (l+r)/2;
             int q1 = read(id*2, l, mid, x, y);
             int q2 = read(id*2+1, mid+1, r, x, y);
-            return q1 + q2;
+            return segmenttree_function(q1 , q2);
         }
     }
 }
@@ -25,7 +28,7 @@ void update(int id, int l, int r, int p, int value){
         int mid = (l+r)/2;
         if(p <= mid) update(id*2, l, mid, p, value);
         else update(id*2+1, mid+1, r, p, value);
-        tree[id] = tree[id*2] + tree[id*2+1];
+        tree[id] = segmenttree_function(tree[id*2] , tree[id*2+1]);
     }
 }
 
@@ -35,7 +38,7 @@ void build(int id, int l, int r){
         int mid = (l+r)/2;
         build(id*2, l, mid);
         build(id*2+1, mid+1, r);
-        tree[id] = tree[id*2] + tree[id*2+1];
+        tree[id] = segmenttree_function(tree[id*2] , tree[id*2+1]);
     }
 }
 
