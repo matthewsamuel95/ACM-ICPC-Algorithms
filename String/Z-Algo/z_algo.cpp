@@ -31,7 +31,7 @@ int n;
 void z_func(string &s){			// l, r are the invariant variables => [l,r] is the maximum interval such that s[l,r] is a prefix substring
     int l = 0, r = 0;
     n = s.size();
-    for(int i = 1; i < n; i++){
+    for(let i = 1; i < n; i++){
         if(i > r){				// make a new interval l,r and find the substring starting at i which is a prefix substring
             l = r = i;
             while(r < n && s[r - l] == s[r])    r++;
@@ -56,7 +56,7 @@ int main(){
 	io;
 	string s = "aaaaa";
 	z_func(s);
-	for(int i = 1; i < s.size(); i++)
+	for(let i = 1; i < s.size(); i++)
 		trace(i, z[i]);
 	return 0;
 }
