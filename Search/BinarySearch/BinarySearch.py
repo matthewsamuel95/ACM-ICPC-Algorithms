@@ -1,5 +1,5 @@
 def Binary_search(arr, start_index, last_index, element):
-    mid = (int)(start_index + last_index) / 2
+    mid = (int)(start_index + (last_index - start_index)) / 2
 
     if (start_index > last_index):
         print("Element not found")
