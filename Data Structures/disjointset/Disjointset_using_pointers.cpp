@@ -1,4 +1,4 @@
-//A simple implementation of DJS uning map data structure.
+//A simple implementation of DJS using map data structure.
 #include <bits/stdc++.h>
 #define ll long long int
 using namespace std;
