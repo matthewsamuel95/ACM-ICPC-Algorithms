@@ -15,7 +15,7 @@ bool binary_search(int number)
 
     do
     {
-        mid = (higher + lower) / 2;
+        mid = (lower + (higher - lower)) / 2;
         if (number == myarray[mid])
         {
             std::cout << "found at pos: " << mid + 1 << std::endl;

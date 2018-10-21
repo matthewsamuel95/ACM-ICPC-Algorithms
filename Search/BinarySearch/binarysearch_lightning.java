@@ -20,7 +20,7 @@ public class Binary_search {
 		int left = 0, right = A.length - 1;
 
 		while (left <= right) {
-			int mid = (left + right) / 2;
+			int mid = (left + (right - left)) / 2;
 			if (data > A[mid]) {
 				left = mid + 1;
 			} else if (data < A[mid]) {
