@@ -127,6 +127,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Floor Square Root](/Math/floor_sqrt)
    * [Greatest Common Divisor](/Math/gcd)
    * [Histogram Area](/Math/histogram_area)
+   * [Largest Number Divisible By Three](/Math/largest_number_divisible_by_three)
    * [Last Digit Exp](/Math/last_digit_exp)
    * [Logarithm](/Math/log)
    * [Lowest Common Multiple](/Math/lowest_common_multiple)
