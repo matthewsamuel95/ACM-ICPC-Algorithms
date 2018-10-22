@@ -36,7 +36,7 @@ class CoinChange
     { 
         int arr[] = {1, 2, 3}; 
         int m = arr.length; 
-        int n = 4; 
-        System.out.println(countWays(arr, m, n)); 
+        int number = 4; 
+        System.out.println(countWays(arr, m, number)); 
     } 
 }
