@@ -60,7 +60,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Coin Change](/DP/Coin%20Change%20Problem)
    * [Collect Maximum Points](/DP/Collect_Max_Points)
    * [Edit Distance](/DP/EditDistance)
-   * [Egg Droping Puzzle](/DP/Egg%20Droping%20Puzzle)
+   * [Egg Droping Puzzle](/DP/Egg%20Dropping%20Puzzle)
    * [Fibonacci Series](/DP/Fibonacci)
    * [Floyd Warshall Algorithm](/DP/Floyd%20Warshall%20Algorithm)
    * [Game Of Sum](/DP/game_of_sum)
