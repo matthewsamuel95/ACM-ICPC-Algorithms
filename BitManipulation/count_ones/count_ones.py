@@ -3,7 +3,7 @@ def count_ones(n: int):
     while n:
         if n & 1:
             count += 1
-        n = n // 2
+        n >>= 1
     return count
 
 
