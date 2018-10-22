@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <stdio.h>
 
 int binary_search(int A[], int k, int n){
 	int i=0, r=n-1, m;
