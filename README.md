@@ -202,3 +202,5 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Top K Frequent Words In Java](/String/top_k_frequent_words_in_java)
    * [Uncompressing Strings](/String/Uncompressing_Strings)
    * [Parsing Arithmetic](/String/ParsingArithmetic)
+* [Geometry 2D](/Geometry%202D)
+   * [Lines Intersection](/Geometry%202D/Lines%20Intersection)
