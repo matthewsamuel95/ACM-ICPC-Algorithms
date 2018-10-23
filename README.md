@@ -195,6 +195,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Hamming Distance](/String/Hamming%20distance)
    * [KMP](/String/KMP)
    * [Palindrome](/String/Palindrome)
+   * [string encryption](/String/encryption)
    * [String Automaton](/String/String%20Automaton)
    * [String Matching](/String/String%20Matching)
    * [Substring](/String/Substring)
