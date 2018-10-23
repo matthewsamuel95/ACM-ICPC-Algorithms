@@ -1,5 +1,6 @@
 import java.util.*;
 import java.lang.*;
+import static net.mindview.util.Print.*;
 
 class bfs
 {  
