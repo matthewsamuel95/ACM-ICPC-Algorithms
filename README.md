@@ -189,6 +189,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [ShellSort](/Sorting/ShellSort)
    * [TimSort](/Sorting/TimSort)
    * [Topological Sorting](/Sorting/Topological%20Sorting)
+   * [Quick Sort algorithm](/Sorting/Quick Sortal gorithm)
 * [String Algorithms](/String)
    * [Anagram](/String/Anagram)
    * [Balanced Parenthesis](/String/Balanced%20Parentheses)
