@@ -9,9 +9,9 @@ max_epochs = Maximum number of iterations before the function gives up trying to
 
 weights = [2, -4] # The initial weight assigned to each data point
 
-bias = 0 bias = The bias for each weight (a positive value means to favour one value whilst negative means to oppose it)
+bias = 0 # The bias for each weight (a positive value means to favour one value whilst negative means to oppose it)
 
-learning\_rate = 0.5 # The rate at which the perceptron learns and adapts is model. Too low value can cause the perceptron to constantly undervalue the data and not adapt within the max_epochs. However, too high a value can cause the perceptron to overvalue the data and never adapt to an accurate model.
+learning_rate = 0.5 # The rate at which the perceptron learns and adapts is model. Too low value can cause the perceptron to constantly undervalue the data and not adapt within the max_epochs. However, too high a value can cause the perceptron to overvalue the data and never adapt to an accurate model.
 
 examples = []  # The data specified as a list of tuples. The first item in each tuple is the data which itself is another tuple of values and the second item in the tuple is the output value of this data. In this case, the value is either 0 or 1.
 examples.append((0,0),0)
