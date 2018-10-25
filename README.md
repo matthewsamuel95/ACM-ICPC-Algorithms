@@ -22,7 +22,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 **Table of Contents :**
 
 * [Breadth First Search](/BFS)
-* [Branch And Bound](/Branch and Bound)
+* [Branch And Bound](/Branch%20and%20Bound)
   * [0/1 Knapsack](/Branch%20and%20Bound/0_1%20Knapsack)
 * [Binary Search Tree](/BST)
 * [Backtracking](/BackTracking)
