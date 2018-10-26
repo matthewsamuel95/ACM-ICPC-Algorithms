@@ -14,6 +14,7 @@ void printBoard(vector<vector<int> > board){
 	}
 	cout<<endl;
 }
+//function to check if queen is safe at a place
 bool isSafe(int row,int col){
 	if(row_c.find(row)!=row_c.end())
 		return false;
