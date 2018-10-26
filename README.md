@@ -12,6 +12,10 @@ Alternately, we can say that the [International Collegiate Programming Contest](
 ACM-ICPC Algorithms is a collection of important algorithms and data structures used to solve questions in this worldwide olympiad. It aims to provide solutions in various languages as per [ICPC 2018 WF](https://icpc.baylor.edu/worldfinals/programming-environment), including:
 -  C
 -  C++
+- Visual Basic
+- CS
+- M-Dos
+- Perl
 -  Java
 -  Python (2 & 3)
 -  Kotlin
