@@ -175,6 +175,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Exponential Search](/Search/ExponentialSearch)
 * [Sorting Algorithms](/Sorting)
    * [BogoSort](/Sorting/BogoSort)
+   * [Strand sort](/Sorting/strandsort)
    * [Bubble Sort](/Sorting/Bubble%20Sort)
    * [Bucket Sort](/Sorting/Bucket%20Sort)
    * [Cocktail Shaker Sort](/Sorting/Cocktail%20Shaker%20Sort)
