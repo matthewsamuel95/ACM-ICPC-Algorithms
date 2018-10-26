@@ -1,8 +1,8 @@
-# ACM-ICPC Algorithms
+﻿# ACM-ICPC Algorithms
 
 ### Introduction to ACM-ICPC
 ACM International Collegiate Programming Contest (abbreviated as ACM-ICPC or ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.
-
+##
 Alternately, we can say that the [International Collegiate Programming Contest](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) is an algorithmic programming contest for college students.
 - Teams of three, representing their university, work to solve real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure.
 - Through training and competition, teams challenge each other to raise the bar on what could be done.
