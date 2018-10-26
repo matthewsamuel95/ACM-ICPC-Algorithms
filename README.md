@@ -78,6 +78,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Number Of Islands](/DP/NumberOfIslands)
    * [Partition Problem](/DP/PartitionProblem)
    * [Print Neatly](/DP/PrintNeatly)
+   * [Recursive Staircase Problem](/DP/Recursive_Staircase_Problem)
    * [Shortest Uncommon Subsequence](/DP/ShortestUncommonSubsequence)
    * [Subset Sum](/DP/subset%20sum%20problem)
    * [Longest Bitonic SubSequence](/DP/LongestBitonicSubseq)
