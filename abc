@@ -1,0 +1,51 @@
+int binarySearch(vector<int>arr, int l, int r, int x) 
+{ 
+   if (r >= l) 
+   { 
+        int mid = l + (r - l)/2; 
+  
+        
+        if (arr[mid] == x)   
+            return mid; 
+        else if (arr[mid] > x)  
+            return binarySearch(arr, l, mid-1, x); 
+        else
+        return binarySearch(arr, mid+1, r, x); 
+   } 
+   return -1; 
+} 
+
+
+vector<int> Solution::primesum(int A) 
+{
+    vector<int>v,v1;
+    int max_size = A;
+    long a[max_size];
+    a[1] = false;
+    a[2]=true;
+    for(int i=4;i<=max_size;i+=2)
+        a[i] = false;
+    for(int i=3;i<=max_size;i+=2)
+        a[i] = true;
+    for(int i=3;i<=max_size;i+=2)
+    {
+        for(int j=2*i;j<=max_size;j+=i)
+        a[j] = false;
+    }
+    for(int i=1;i<=max_size;i++)
+    {
+        if(a[i] == true)
+        v.push_back(i);
+    }
+    for(int i=0;i<v.size();i++)
+    {
+        int temp = A-v[i];
+        if(binarySearch(v,0,v.size()-1,temp)!=-1)
+        {
+            v1.push_back(v[i]);
+            v1.push_back(temp);
+            break;
+        }
+    }
+    return v1;
+}
