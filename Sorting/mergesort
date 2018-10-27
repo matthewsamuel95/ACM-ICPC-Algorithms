@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void merge(int* vetor,int inicio, int meio, int fim){
+    int i,j,k;
+    int aux1 = meio - inicio + 1;
+    int aux2 =  fim - meio;
+    int e[aux1];
+    int d[aux2];
+
+    //preencher os vetores auxiliares
+    for(i=0;i<aux1;i++){
+        e[i]=vetor[inicio+i];
+    }
+    for(i=0;i<aux2;i++){
+        d[i]=vetor[meio+i+1];
+    }
+    //fazer a troca
+    i=0;
+    j=0;
+    k=inicio;
+    while(i<aux1 && j<aux2){
+        if(e[i]<=d[j]){
+            vetor[k]=e[i];
+            i++;
+        }
+        else{
+            vetor[k]=d[j];
+            j++;
+        }
+        k++;
+    }
+    while(i<aux1){
+        vetor[k]=e[i];
+        i++;
+        k++;
+    }
+    while(j<aux2){
+        vetor[k]=d[j];
+        j++;
+        k++;
+    }
+};
+void mergesort(int* vetor,int inicio,int fim){
+    if(inicio<fim){
+        int meio= (inicio+fim)/2;
+        mergesort(vetor,inicio,meio);
+        mergesort(vetor,meio+1,fim);
+        merge(vetor,inicio,meio,fim);
+    }
+};
+
+int main() {
+    int *fila;
+    int cont=0;
+    int tam,i;
+    int deuruim=0;
+
+    scanf("%i",&tam);
+    fila = (int*) malloc(tam*sizeof(int));
+
+    for(i=0;i<tam;i++){
+        scanf("%i",&fila[i]);
+    }
+    mergesort(fila,0,tam-1);
+
+    for(i=0;i<tam;i++){
+        if(cont<=fila[i]){
+            cont+=fila[i];
+        }
+        else{
+            deuruim++;
+        }
+    }
+    printf("%i\n",tam-deuruim);
+
+
+
+
+
+	return 0;
+}
