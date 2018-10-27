@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+
+int find(int decimal_number) 
+{ 
+    if (decimal_number == 0)  
+        return 0;  
+    else
+        return (decimal_number % 2 + 10 *  
+                find(decimal_number / 2)); 
+} 
+
+long no_of_ones(int p)
+{
+    long n = find(p);
+    int count = 0;
+    while(n > 0)
+    {
+        if(n%10 == 1)
+            count++;
+        n=n/10;
+    }
+    return count;
+}
+int Solution::hammingDistance(const vector<int> &A) 
+{
+    long sum = 0,mod=1000000007;
+    for(long i=0;i<A.size();i++)
+    {
+        for(long j=0;j<A.size();j++)
+        {
+            long temp = A[i]^A[j];
+            long x = no_of_ones(temp);
+            sum += x%mod;
+        }
+    }
+    return sum%mod;
+}
