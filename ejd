@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int t;
+    cin>>t;
+    for(int i=1;i<=t;i++)
+    {
+        int r;
+        cin>>r;
+        double ans = 4*r*r + 0.25;
+        cout<<"Case "<<t<<": "<<ans<<endl; 
+
+    }
+}
