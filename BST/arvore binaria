@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+
+
+struct arvere{
+    int valor;
+    struct arvere *ant;
+    struct arvere *prox;
+};
+typedef struct arvere arvere;
+
+void nordi(arvere *raiz,int teste[],int *i){
+    if(raiz!= NULL){
+        nordi((*raiz).ant,teste,i);
+        teste[*i]=(*raiz).valor;
+        *i++;
+        nordi((*raiz).prox,teste,i);
+    }
+}
+void criar(arvere **raiz){
+    *raiz=NULL;
+}
+void posordi(arvere *raiz,int teste[],int *i){
+    if(raiz!= NULL){
+        nordi((*raiz).ant,teste,i);
+        nordi((*raiz).prox,teste,i);
+        teste[*i]=(*raiz).valor;
+        *i++;
+    }
+}
+
+void inserir(arvere **raiz,int num){
+    if(*raiz==NULL){
+        *raiz = (arvere*) malloc(sizeof(arvere*));
+        (*raiz).valor=num;
+        (*raiz).ant=NULL;
+        (*raiz).prox=NULL;
+    }
+    else if(((**raiz).valor)>num){
+        inserir(&((**raiz).ant),num);
+    }
+    else{
+        inserir(&((**raiz).prox),num);
+    }
+}
+
+int main(){
+    arvere *raiz;
+    int n,i;
+    int *preordem;
+    int *posordem;
+    int *emordem;
+    int *teste;
+    //zerar a arvore?
+
+    //raiz = ponteiro da raiz
+    //*raiz = raiz
+    criar(&raiz);
+    //quantidade
+    scanf("%i",&n);
+    //alocar a porra toda
+    preordem = (int *) malloc(n*sizeof(int));
+    posordem = (int *) malloc(n*sizeof(int));
+    emordem = (int *) malloc(n*sizeof(int));
+    teste = (int *) malloc(n*sizeof(int));
+
+    //ler as ordens
+    for(i=0;i<n;i++){
+        scanf("%i",&preordem[i]);
+    }
+    for(i=0;i<n;i++){
+        scanf("%i",&posordem[i]);
+    }
+    for(i=0;i<n;i++){
+        scanf("%i",&emordem[i]);
+    }
+    //criar a arvore
+    for(i=0;i<n;i++){
+        inserir(&raiz,preordem[i]);
+    }
+    printf("criou direitin");
+    free(preordem);
+    i=0;
+    nordi(raiz,teste,&i);
+    int deuruim=0;
+    for(i=0;i<n;i++){
+        if(teste[i]!=emordem[i]){
+            deuruim++;
+        }
+    }
+    free(emordem);
+    i=0;
+    posordi(raiz,teste,&i);
+    for(i=0;i<n;i++){
+        if(teste[i]!=posordem[i]){
+            deuruim++;
+        }
+    }
+    free(posordem);
+    if(deuruim==0){
+        printf("yes\n");
+    }
+    else{
+        printf("no\n");
+    }
+
+    return 0;
+}
