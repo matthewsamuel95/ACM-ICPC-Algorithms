@@ -1,0 +1,256 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct arvore{
+    int valor;
+    struct arvore *d;
+    struct arvore *e;
+    int altura;
+};
+typedef struct arvore arvore;
+
+int k;
+//int exu;
+//int cabar;
+/*
+int autura(arvore *x){
+    if(x==NULL)return 0;
+    return x->altura;
+}
+*/
+int max(int a, int b){
+    return (a > b)? a : b;
+}
+
+arvore *criar(int x){
+    //printf("criou\n");
+    arvore *tmp=NULL;
+    tmp=(arvore*)malloc(sizeof(arvore));
+    tmp->valor=x;
+    tmp->d=NULL;
+    tmp->e=NULL;
+    tmp->altura=1;
+    return tmp;
+}
+arvore *rd(arvore *raiz){
+    arvore *a=raiz->e;
+    arvore *b=a->d;
+    //rotação
+    a->d=raiz;
+    raiz->e=b;
+    //atualizar alturas
+    int aa,bb;
+    if(raiz->e!=NULL){
+        aa=raiz->e->altura;
+    }
+    else{
+        aa=0;
+    }
+    if(raiz->d!=NULL){
+        bb=raiz->d->altura;
+    }
+    else{
+        bb=0;
+    }
+    raiz->altura=max(aa,bb)+1;
+    if(a->e!=NULL){
+        aa=a->e->altura;
+    }
+    else{
+        aa=0;
+    }
+    if(a->d!=NULL){
+        bb=a->d->altura;
+    }
+    else{
+        bb=0;
+    }
+    a->altura=max(aa,bb)+1;
+    return a;
+}
+
+arvore *re(arvore *raiz){
+    int aa,bb;
+    arvore *a=raiz->d;
+    arvore *b=a->e;
+    //rotação
+    a->e=raiz;
+    raiz->d=b;
+    //atualizar alturas
+    if(raiz->e!=NULL){
+        aa=raiz->e->altura;
+    }
+    else{
+        aa=0;
+    }
+    if(raiz->d!=NULL){
+        bb=raiz->d->altura;
+    }
+    else{
+        bb=0;
+    }
+    raiz->altura=max(aa,bb)+1;
+    if(a->e!=NULL){
+        aa=a->e->altura;
+    }
+    else{
+        aa=0;
+    }
+    if(a->d!=NULL){
+        bb=a->d->altura;
+    }
+    else{
+        bb=0;
+    }
+    a->altura=max(aa,bb)+1;
+    return a;
+}
+
+int balanco(arvore *raiz){
+    if(raiz==NULL)return 0;
+    int a=0;
+    int b=0;
+    if(raiz->e!=NULL){
+        a=raiz->e->altura;
+    }
+    if(raiz->d!=NULL){
+        b=raiz->d->altura;
+    }
+    return a-b;
+}
+
+arvore *inserir(arvore *raiz,int x){
+    int aa;
+    int bb;
+    if(raiz==NULL){
+        return(criar(x));
+    }
+    else if((*raiz).valor>x){
+        (*raiz).e=inserir((*raiz).e,x);
+    }
+    else{
+        (*raiz).d=inserir((*raiz).d,x);
+    }
+    //atualizar altura
+    if(raiz->e!=NULL){
+        aa=raiz->e->altura;
+    }
+    else{
+        aa=0;
+    }
+    if(raiz->d!=NULL){
+        bb=raiz->d->altura;
+    }
+    else{
+        bb=0;
+    }
+    raiz->altura=max(aa,bb)+1;
+    //balancear
+    int bal=balanco(raiz);
+    if(bal>1 && x<raiz->e->valor){
+        return rd(raiz);
+    }
+    if(bal<-1 && x>raiz->d->valor){
+        return re(raiz);
+    }
+    if(bal>1 && x>raiz->e->valor){
+        raiz->e=re(raiz->e);
+        return rd(raiz);
+    }
+    if(bal<-1 && x<raiz->d->valor){
+        raiz->d=rd(raiz->d);
+        return re(raiz);
+    }
+    return(raiz);
+}
+
+int contar(arvore *raiz){
+    if(raiz==NULL){
+        return 0;
+    }
+    if( raiz->d ==NULL && raiz->e==NULL ){
+        return 1;
+    }
+    else{
+        return (contar(raiz->e)+contar(raiz->d)+1);
+    }
+}
+
+int find(arvore *raiz, int x){
+    if(raiz==NULL){
+        return 0;
+    }
+    if( raiz->valor > x ){
+        return find(raiz->e,x);
+    }
+    else if( raiz->valor == x ){
+        k++;
+        k+=contar(raiz->e);
+        return 1;
+    }
+    else{
+        k++;
+        k+=contar(raiz->e);
+        return find(raiz->d,x);
+    }
+}
+/*
+int maiores(arvore *raiz,int x){
+    int r=0;
+    while(raiz!=NULL){
+        int y =(raiz->d != NULL) ?
+                   raiz->d->desc : -1;
+
+        if (raiz->valor > x) {
+            r = r+y+2;
+            root = root->left;
+        } else if (root->key < x)
+            root = root->right;
+        else {
+            res = res + desc + 1;
+            goto fim;
+        }
+    }
+    fim:;
+    return r;
+}
+*/
+int main(){
+    arvore *raiz;
+    int linhas;
+    int op;
+    int n;
+    //int quant=0;
+    int i;
+  //  int *aux;
+
+
+    raiz=NULL;
+
+
+    scanf("%i",&linhas);
+
+//    aux=(int*)malloc(1000001*sizeof(int));
+
+    for(i=0;i<linhas;i++){
+            scanf("%i %i",&op,&n);
+            if(op==1){
+                raiz = inserir(raiz,n);
+                //quant++;
+                //aux[n]=1;
+            }
+            else{
+                k=0;
+                if(find(raiz,n)==0){
+                //if(aux[n]!=1){
+                    printf("Data tidak ata\n");
+                }
+                else{
+                //    find(raiz,n);
+                    //printf("%i\n",quant-maiores());
+                    printf("%i\n",k);
+                }
+            }
+    }
+return 0;
+}
