@@ -1,0 +1,54 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int **grafo;
+int *visitados;
+int *usados;
+
+void botar(int a,int b){
+	grafo[a][b]=1;
+	grafo[b][a]=1;
+}
+
+void printgrafo(int x){
+    int i,j;
+    for(i=0;i<x;i++){
+        for(j=0;j<x;j++){
+            printf(" %i",grafo[i][j]);
+        }
+        printf("\n");
+    }
+}
+int partess(int tam){
+    int resposta=1;
+    int i;
+    int a=0;
+
+    inicio:;
+    visitados[a]=1;
+    usados[a]=1;
+    //visitar os vizinhos
+    for(i=0;i<tam;i++){
+        if(grafo[a][i]==1){
+            visitados[i]=1;
+        }
+    }
+    //checagem dos usados
+    for(i=0;i<tam;i++){
+        if(visitados[i]==1 && usados[i]==0){
+            a=i;
+            goto inicio;
+        }
+    }
+    //checar se acabou
+    for(i=0;i<tam;i++){
+        if(visitados[i]==0){
+            a=i;
+            resposta++;
+            goto inicio;
+        }
+    }
+    return resposta;
+}
+
