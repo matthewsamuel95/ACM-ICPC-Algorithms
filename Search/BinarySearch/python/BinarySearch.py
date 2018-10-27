@@ -1,4 +1,5 @@
 def Binary_search(arr, start_index, last_index, element):
+  #taking the middle element of the tree
     mid = (int)(start_index + (last_index - start_index)) / 2
 
     if (start_index > last_index):
