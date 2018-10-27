@@ -17,3 +17,5 @@ for i in range(n):
         found = True
 if not found:
     print(key, " not found in the list! :(")
+
+    #can this be made more simple
