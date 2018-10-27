@@ -9,7 +9,6 @@ Input :
 Output :
 4
 '''
-
 #Activity Class
 class Activity:
 
