@@ -9,7 +9,7 @@ Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
 * STEP 2: Jump from index 4 to index 8;
 * STEP 3: Jump from index 8 to index 16;
 * STEP 4: Since the element at index 16 is greater than 55 we will jump back a step to come to index 9.
-* STEP 5: Perform linear search from index 9 to get the element 55.
+* STEP 5: Perform a linear search from index 9 to get the element 55.
 
 ## Time Complexity
 O(sqrt(n))
