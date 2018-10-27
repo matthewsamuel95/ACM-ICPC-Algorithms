@@ -46,7 +46,7 @@ def kadane(list_obj=None):
         raise TypeError("input must be of type list")
     if not list_obj:
         raise ValueError("list must not be empty")
-    max_sum, cur_max = list_obj[0], list_obj[0]
+    max_sum, cur_max = list_obj[0], 0
     size = len(list_obj)
 
     for idx, val in enumerate(list_obj):
