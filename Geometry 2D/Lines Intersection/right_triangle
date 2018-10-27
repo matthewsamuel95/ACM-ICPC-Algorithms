@@ -1,0 +1,44 @@
+
+// C++ program to check existence of
+// right triangle from given hypotenuse and area of the triangle.
+#include <bits/stdc++.h>
+using namespace std;
+
+// Prints three sides of a right trianlge
+// from given area and hypotenuse if triangle
+// is possible, else prints -1.
+void findRightAngle(int A, int H)
+{
+    // Descriminant of the equation
+    long D = pow(H, 4) - 16 * A * A;
+
+    if (D >= 0)
+    {
+        // applying the linear equation
+        // formula to find both the roots
+        long root1 = (H * H + sqrt(D)) / 2;
+        long root2 = (H * H - sqrt(D)) / 2;
+
+        long a = sqrt(root1);
+        long b = sqrt(root2);
+
+        cout<<"Right angle triangle can be formed with following sides\n";
+
+        if (b >= a)
+        cout << a << " " << b << " " << H;
+        else
+        cout << b << " " << a << " " << H;
+    }
+    else
+        cout << "Right angles triangle cannot be formed\n";
+}
+
+// Driver code
+int main()
+{
+    int a,h;
+    cout<<"Enter the area and hypotenuse respectively\n";
+    cin>>a>>h;
+    findRightAngle(a, h);
+
+}
