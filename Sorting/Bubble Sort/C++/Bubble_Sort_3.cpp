@@ -1,41 +1,42 @@
-#include <iostream>
-using namespace std;
 
-void bubbleSort(int A[],int n)
-{
-    int i,j;
-    int temp;
-    for(i=0;i<n-1;i++)
-    {
-        for(j=0;j<n-i-1;j++)
-        {
-            if(A[j]<A[j+1])
-            {
-                temp=A[j];
-                A[j]=A[j+1];
-                A[j+1]=temp;
-            }
-        }
-    }
-}
-
-int main()
-{
-    int n;
-    cout<<"Enter the size of the array\n";
-    cin>>n;
-    int a[n];
-    cout<<"Enter the element\n";
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-    bubbleSort(a,n);
-    cout<<"The Sorted array is :-";
-    for(int i=0;i<n;i++)
-    {
-        cout<<a[i]<<" ";
-    }
-    cout<<endl;
-    return 0;
-}
+// C program for implementation of Bubble sort 
+#include <stdio.h> 
+  
+void swap(int *xp, int *yp) 
+{ 
+    int temp = *xp; 
+    *xp = *yp; 
+    *yp = temp; 
+} 
+  
+// A function to implement bubble sort 
+void bubbleSort(int arr[], int n) 
+{ 
+   int i, j; 
+   for (i = 0; i < n-1; i++)       
+  
+       // Last i elements are already in place    
+       for (j = 0; j < n-i-1; j++)  
+           if (arr[j] > arr[j+1]) 
+              swap(&arr[j], &arr[j+1]); 
+} 
+  
+/* Function to print an array */
+void printArray(int arr[], int size) 
+{ 
+    int i; 
+    for (i=0; i < size; i++) 
+        printf("%d ", arr[i]); 
+    printf("n"); 
+} 
+  
+// Driver program to test above functions 
+int main() 
+{ 
+    int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    bubbleSort(arr, n); 
+    printf("Sorted array: \n"); 
+    printArray(arr, n); 
+    return 0; 
+} 
