@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+void isPrime(int num){
+	if (num == 0 || num == 1) {
+		printf("This number is not prime !\n");
+		return;
+	}
+	int flag = 1;
+	for (int i = 2; i <= sqrt(num); i++)
+		if (num % i == 0) flag = 0;
+	if (flag) printf("This number is prime !\n");
+	else printf("This number is not prime !\n");
+}
+
+int main() {
+	int num;
+	scanf("%d", &num);
+	isPrime(num);
+	return 0;
+}
