@@ -15,7 +15,7 @@ rprint(p->next);
 cout<<p->data;
 	
 }
-
+//Node Insertion at the end of linked list
 Node* insert( Node* head,int data)
 {
 	Node* temp= new Node;
