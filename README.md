@@ -102,6 +102,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Targan SCC](/Graph/TarganSCC)
    * [Topo Sort](/Graph/TopoSort)
    * [Fenwick Tree](/Graph/FenwickTree)
+   * [Weighted Quick Union](/Graph/Weighted_Quick_Union)
 * [Greedy Algorithms](/Greedy)
    * [Activity Selection](/Greedy/ActivitySelection)
    * [Containership](/Greedy/ContainerShip)
