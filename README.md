@@ -17,7 +17,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
 -  Kotlin
 ##### For more information, visit: **Official Website of [ICPC](https://icpc.baylor.edu/)**
 
-#### If you wish to contribute, please refer to [the contributor guidelines](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md).
+#### If you wish to contribute, please refer to [the contributor guidelines](https://github.com/matthewsamuel95/ACM-ICPC-Algorithms/blob/master/CONTRIBUTING.md)
 
 **Table of Contents :**
 
