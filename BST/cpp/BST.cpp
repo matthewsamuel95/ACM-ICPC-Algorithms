@@ -1,156 +1,146 @@
-#include<bits/stdc++.h>
-#include<stdlib.h>
+#include <iostream>
+#include <cstdlib> 
+#include <list>
 using namespace std;
 
-// nesse caso base usaremos key tipo string e elemento tipo int
-
-struct BSTnode{
-    string key;
-    int element;
-    BSTnode *left;
-    BSTnode *right;
+// Create binary searching tree structure
+struct node {
+  int val;
+  struct node * left, * right;
 };
 
-struct BST{
-    BSTnode *root;
-    int nodecount;
-};
-
-BST *create_bst(){
-    BST *bst;
-    bst = new BST;
-    bst->root=NULL;
-    bst->nodecount=0;
-    return bst;
+// Insert a number n to node's val, and pointer node's left and right
+// branch to NULL
+struct node * insert(int n) {
+  struct node * temp = new struct node();
+  temp -> val = n;
+  temp -> left = NULL;
+  temp -> right = NULL;
+  return temp;
 }
 
-void clear(BST *bst){
-    bst->root = NULL;
-    bst->nodecount=0;
+// Inorder permutation, permutate from left to root to right,
+// accordingly
+void inorder(struct node * root) {
+  if (root != NULL) {
+    inorder(root -> left);
+    cout << root -> val << " ";
+    inorder(root -> right);
+  }
 }
 
-int size_bst(BST *bst){
-    return bst->nodecount;
+// Postorder permutation, permutate from left to right to root,
+// accoringly
+void postorder(struct node * root) {
+  if (root != NULL) {
+    postorder(root -> right);
+    postorder(root -> left);
+    cout << root -> val << " ";
+  }
 }
 
-int find_help(BSTnode *rt, string k){
-    if(rt==NULL){
-        return INT_MAX;
-    }
-    else if(rt->key>k){
-        return find_help(rt->left, k);
-    }
-    else if(rt->key==k){
-        return rt->element;
-    }
-    else{
-        return find_help(rt->right, k);
-    }
-
+// Preorder permutation, permutate from root to left to right,
+// accorginly
+void preorder(struct node * root) {
+  if (root != NULL) {
+    cout << root -> val << " ";
+    preorder(root -> left);
+    preorder(root -> right);
+  }
 }
 
-int find(BST *bst, string k ){
-    return find_help(bst->root, k);
+// Create a new binary searching tree structure
+struct node * create(struct node * root, int n) {
+  // If root(node) is NULL, then insert a value n as it's value
+  if (root == NULL)
+    insert(n);
+  // Find the node that is NULL, else if val > n, then check root's left
+  // node is empty or not, else if val < n, then check root's right node
+  // is empty or not
+  else if (root -> val > n) {
+    root -> left = create(root -> left, n);
+  } else
+    root -> right = create(root -> right, n);
 }
 
-BSTnode *create_bstnode(string k, int e){
-    BSTnode *rt;
-    rt = new BSTnode;
-    rt->left=NULL;
-    rt->right=NULL;
-    rt->key = k;
-    rt->element = e;
-    return rt;
-}
-
-BSTnode *inserthelp(BSTnode *rt, string k, int e){
-    if(rt==NULL){
-        return create_bstnode(k,e);
-    }
-    else if(rt->key>k){
-        rt->left = inserthelp(rt->left, k, e);
-    }
-    else{
-        rt->right = inserthelp(rt->right, k, e);
-    }
-    return rt;
-}
-
-void insert(BST *bst, string k, int e){
-    bst->nodecount++;
-    bst->root = inserthelp(bst->root, k, e);
-}
-
-BSTnode *getmin(BSTnode *rt){
-    if(rt->left==NULL){
-        return rt;
-    }
-    return getmin(rt->left);
-}
-
-BSTnode *deletemin(BSTnode *rt){
-    if(rt->left == NULL){
-        return rt->right;
-    }
-    rt->left = deletemin(rt->left);
-    return rt;
-}
-
-BSTnode *remove_help(BSTnode *rt, string k){
-    if(rt==NULL){
-        return NULL;
-    }
-    if(rt->key>k){
-        rt->left = remove_help(rt->left, k);
-    }
-    else if(rt->key<k){
-        rt->right = remove_help(rt->right, k);
-    }
-    else{
-        if(rt->left==NULL){
-            return rt->right;
-        }
-        else if(rt->right==NULL){
-            return rt->left;
-        }
-        else{
-            BSTnode *temp = getmin(rt->right);
-            rt->element = temp->element;
-            rt->key = temp->key;
-            rt->right = deletemin(rt->right);
-        }
-    }
-}
-
-int remove(BST *bst, string k){
-    int temp = find_help(bst->root, k);
-    if(temp!=INT_MAX){
-        bst->root = remove_help(bst->root, bst->root->key);
-        bst->nodecount--;
-    }
-    return temp;
-
-}
-
-int main(void){
-    BST *bst=create_bst();
-    insert(bst, "a", 0);
-    insert(bst, "ab", 1);
-    insert(bst, "abc", 2);
-    insert(bst, "abcd", 3);
-    insert(bst, "abcde", 4);
-    cout << find(bst, "a") << endl;
-    cout << find(bst, "ab") << endl;
-    cout << find(bst, "abc") << endl;
-    cout << find(bst, "abcd") << endl;
-    cout << find(bst, "abcde") << endl;
-    clear(bst);
-    cout << find(bst, "a") << endl;
-    cout << find(bst, "ab") << endl;
-    cout << find(bst, "abc") << endl;
-    cout << find(bst, "abcd") << endl;
-    cout << find(bst, "abcde") << endl;
-    
-
+// Find a specific node that the val is equal to key
+bool find(struct node * root, int key) {
+  // If val > key and the next left node is NULL, return not found(0)
+  if (root -> val > key && root -> left == NULL)
     return 0;
+	// If val < key and the next right node is NULL, return not found(0)
+  if (root -> val < key && root -> right == NULL)
+    return 0;
+	// If val = key then return found(1)
+  if (root -> val == key)
+    return 1;
+	// If val > key and the next left node is not NULL, then go to next
+	// left node and keep searching
+	// If val < key and the next right node is not NULL, then go to next
+	// right node and keep searching
+	// Else return not found(0)
+  else if (root -> val > key) {
+    find(root -> left, key);
+  } else if (root -> val < key) {
+    find(root -> right, key);
+  } else
+    return 0;
+}
+//This function counts the total number  of nodes in a tree
+int countNodes(struct node * root){
+  if(root==NULL)
+    return 0;
+  else
+    return 1 + countNodes(root->left) + countNodes(root->right);
+}
+
+
+//This function calclulates the height of the binary search tree. 
+int height(struct node *root){
+  if(root==NULL)
+    return 0;
+  return 1 + max(height(root->left),height(root->right));
+}
+
+
+//This function calculates the diameter of the binary search tree.
+int diameter(struct node *root){
+  if(root == NULL)
+    return 0;
+  return max(1 + height(root->left) + height(root->right), max(diameter(root->left),diameter(root->right)));
+}
+
+int main() {
+	// Init a empty node bst
+  struct node * bst = NULL;
+	// Input each value of bst
+  bst = create(bst, 5);
+  create(bst, 10);
+  create(bst, 20);
+  create(bst, 21);
+  create(bst, 14);
+  create(bst, 9);
+  create(bst, 3);
+  create(bst, 12);
+  create(bst, 21);
+	// Inorder permutate from left -> root -> right
+  cout << "The Inorder traversal of the tree is : ";
+  inorder(bst);
+  cout << endl;
+	// Postorder permutate from left -> right -> root
+  cout << "The Postorder traversal of the tree is : ";
+  postorder(bst);
+  cout << endl;
+	// Preorder permutate from root -> left -> right
+  cout << "The Preorder traversal of the tree is : ";
+  preorder(bst);
+  cout << endl;
+  // Count total number of nodes in the tree
+  cout << "The number of nodes in the tree : ";
+  cout << countNodes(bst) << endl;
+  cout << "The height of the tree is : ";
+  cout << height(bst) << endl;
+  cout << "The diameter of the tree is : ";
+  cout << diameter(bst) << endl;
+  return 0;
 }
