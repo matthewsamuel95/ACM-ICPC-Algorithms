@@ -10,7 +10,7 @@ public class BubbleSort {
 		for (int i = leftIndex; i < rightIndex; i++) {
 			for (int j = leftIndex; j < rightIndex; j++) {
 				if (array[j] > array[j + 1]) {
-					int aux = array[j];
+					int aux = array[j];     //int aux is temporery variable
 					array[j] = array[j + 1];
 					array[j + 1] = aux;
 				}
