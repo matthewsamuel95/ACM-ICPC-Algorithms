@@ -106,6 +106,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Activity Selection](/Greedy/ActivitySelection)
    * [Containership](/Greedy/ContainerShip)
    * [Equalizing Bit Strings](/Greedy/EqualizingBitStrings)
+   [kSort](/Sorting/kSort)
    * [Gas Station](/Greedy/Gas%20Station)
    * [Greedy Graph Coloring](/Greedy/Greedy_Graph_Coloring)
    * [Huffman Coding](/Greedy/Huffman%20coding)
