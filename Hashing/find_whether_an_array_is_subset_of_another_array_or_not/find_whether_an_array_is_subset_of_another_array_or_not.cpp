@@ -10,14 +10,14 @@ int main(){
     bool answer = true;
     cout<<"number of elements in the first array";
     cin>>n;
-
+    
     for(int i=0; i<n; i++){
         cin>>temp;
         mapp[temp]=1;
     }
     cout<<"number of elements in the second array";
     cin>>m;
-
+    
     for(int i=0;i<m;i++){
         cin>>temp;
         v.push_back(temp);
