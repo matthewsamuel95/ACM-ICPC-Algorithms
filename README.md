@@ -120,7 +120,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [2 Sum](/Hashing/2_Sum)
    * [3 Sum](/Hashing/3_Sum)
    * [4 Sum](/Hashing/4_Sum)
-   * [find_whether_an_array_is_subset_of_another_array_or_not](/Hashing/find_whether_an_array_is_subset_of_another_array_or_not)
+   * [Find Whether the array is Subset of Another array or Not](/Hashing/find_whether_an_array_is_subset_of_another_array_or_not)
 * [Machine Learning](/MachineLearning)
    * [Perceptron](/MachineLearning/Perceptron)
 * [Mathematical Algorithms](/Math)
