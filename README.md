@@ -127,7 +127,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Collatz Conjecture](/Math/collatz_conjecture)
    * [Combinations](/Math/Combinations)
    * [Bézout's Coefficients](/Math/Bézout's%20Coefficients)
-   * [Convuxhull](/Math/convuxhull)
+   * [Convex Hull](/Math/convexhull)
    * [Euler's Totient Function](/Math/eulers_totient_function)
    * [Factorization](/Math/Factorization)
    * [Factors](/Math/factors)
