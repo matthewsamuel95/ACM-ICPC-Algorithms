@@ -60,6 +60,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Segment Tree](/Data%20Structures/Segment%20Tree)
    * [Treap](/Data%20Structures/Treap)
    * [Trie](/Data%20Structures/Trie)
+   * [AVL Tree](/Data%20Structures/AVL%20Tree)
 * [Dynamic Programming](/DP)
    * [Coin Change](/DP/Coin%20Change%20Problem)
    * [Collect Maximum Points](/DP/Collect_Max_Points)
