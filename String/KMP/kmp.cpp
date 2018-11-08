@@ -1,48 +1,49 @@
+#include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int kmp(string text, string pattern){
-	if(pattern.size()==0) return -1;
-	int patLen=pattern.size();
-	int textLen=text.size();
-	int LPS[patLen]={0};
-	int i=1,j=0;
 
-	while(i<patLen){
-		if(pattern[i]==pattern[j]){
-			LPS[i++]=++j;
-		}
-		else{
-			if(j) j=LPS[j-1];
-			else LPS[i++]=0;
-		}
+/*
+ * get prefix list
+ */
+vector<int> computePrefix(string str) {
+
+	int m=int(str.length());
+	vector<int> prefix(m);
+	for(int i=1,k=0;i<m;++i)
+	{
+		if(k>0&&str[i]!=str[k])
+			k=prefix[k-1];
+		if(str[k]==str[i])
+			prefix[i]=++k;
+		else
+			prefix[i]=k;
 	}
-	i=j=0;
-	while(i<textLen){
-		if(pattern[j]==text[i]){
-			i++;j++;
-		}
-		if(j==patLen)	return i-j;
-		else{
-			if(i<textLen && pattern[j]!=text[i]){
-				if(j) j=LPS[j-1];
-				else i++;
-			}
-		}
-	}
-	return -1;
+
+	return prefix;
 }
 
-int main(){
-	string text,pattern;
-	cout<<"\nEnter text : ";
-	getline(cin>>ws,text);
-	cout<<"\nEnter pattern to search in "<<text<<" : ";
-	getline(cin>>ws,pattern);
-	int index=kmp(text,pattern);
-	if(index>0){
-		cout<<"\nPattern found at : "<<index<<"\n";
+void KMP(string &str, string pat) {
+	int m = int(str.length());
+	int n = int(pat.length());
+	vector<int> longestPrefix = computePrefix(pat);
+
+	for (int i = 0, k = 0; i < m; ++i) {
+		if (k > 0 && pat[k] != str[i])
+			k = longestPrefix[k - 1];
+		if (str[i] == pat[k])
+			++k;
+		if (k == n) {
+			cout << i - n + 1 << "\n";
+			//more than one pattern
+			k = longestPrefix[k - 1];
+		}
+
 	}
-	else{
-		cout<<"\nPattern not found!\n";
-	}
+}
+
+int main() {
+	string s,p;
+	cin>>s>>p;
+	KMP(s,p);
+	return 0;
 }

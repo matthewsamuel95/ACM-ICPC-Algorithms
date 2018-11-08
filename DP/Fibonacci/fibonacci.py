@@ -1,22 +1,22 @@
-# DP Approach for Fibonacci series
+'''
 
-ans = dict()
+ Bottom up Approach for Fibonacci series
+
+'''
+
+N = int(input())
 
 
-def fibo(i):
-    global ans
-    if i == 1:
+def fib(n):
+    if (n == 0):
         return 0
-    elif i == 2:
+    elif (n == 1):
         return 1
-    elif i in ans:
-        # print('found:', i, '=>', ans[i])
-        return ans[i]
     else:
-        r = fibo(i - 1) + fibo(i - 2)
-        ans[i] = r
-        return r
+        fib = [0, 1]
+        for i in range(2, n + 1):
+            fib.append(fib[i - 2] + fib[i - 1])
+        return fib[i]
 
 
-index = int(input('enter the index?'))
-print(fibo(index))
+print(fib(N))
