@@ -1,28 +1,30 @@
-def is_anagram(str1, str2):
-    """Checks if two strings are anagrams of each other"""
+def is_anagram(a: str, b: str):
+    count = [0 for _ in range(26)]
+    count2 = [0 for _ in range(26)]
+    a_length, b_length = len(a), len(b)
 
-    #Get a count of all the characters in each string
-    chars1 = get_alphabet(str1.lower())
-    chars2 = get_alphabet(str2.lower())
-
-    #Check if both strings contain the same characters in the same amounts
-    if chars1 == chars2:
-        return True
-    else:
+    if a_length != b_length:
         return False
 
-def get_alphabet(string):
-    """Creates a dictionary containing a count of the number of times
-    each alphanumeric character in string is used."""
+    for i in range(a_length):
+        if 'a' <= a[i] <= 'z':
+            count[ord(a[i]) - ord('a')] += 1
+        elif 'A' <= a[i] <= 'Z':
+            count2[ord(a[i]) - ord('A')] += 1
+        if 'a' <= b[i] <= 'z':
+            count[ord(b[i]) - ord('a')] -= 1
+        elif 'A' <= b[i] <= 'Z':
+            count2[ord(b[i]) - ord('A')] -= 1
 
-    """E.g. get_alphabet("Hello") would return {'H':1, 'e':1, 'l':2, 'o':1}"""
-    alphabet = dict()
-    for c in string:
-        if c.isalnum():
-            if c in alphabet:
-                alphabet[c] = alphabet[c] + 1
-            else:
-                alphabet[c] = 1
+    if any(count) or any(count2):
+        return False
 
-    return alphabet
+    return True
 
+
+if __name__ == '__main__':
+    a, b = 'Abc', 'cab'
+    if is_anagram(a, b):
+        print('Anagrams')
+    else:
+        print('Not Anagrams')
