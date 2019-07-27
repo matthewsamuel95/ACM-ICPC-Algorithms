@@ -99,7 +99,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Prims MST](/Graph/PrimsMST)
    * [Sack](/Graph/Sack)
    * [SPFA SSSP](/Graph/SPFA%20SSSP)
-   * [Targan SCC](/Graph/TarganSCC)
+   * [Tarjan SCC](/Graph/TarjanSCC)
    * [Topo Sort](/Graph/TopoSort)
    * [Fenwick Tree](/Graph/FenwickTree)
    * [Weighted Quick Union](/Graph/Weighted_Quick_Union)
