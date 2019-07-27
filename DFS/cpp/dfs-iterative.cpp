@@ -1,3 +1,36 @@
+/**
+ * Author   : huynhsamha
+ * Topic    : Iterative Depth First Search (DFS) using Stack
+ * ===================================================================
+ * Input format:
+ * The first line contains n, m, src, where:
+ *  + n   : the number of vertices
+ *  + m   : the number of edges
+ *  + src : source node
+ *
+ * Then m lines follow, each describe en edge, the i-th line contains
+ * u, v denoting that have an undirected edge between u and v
+ * ==================================================================
+ * Example:
+ * ================
+ * Input:
+ * ================
+    8 7 2
+    1 2
+    1 4
+    2 3
+    2 4
+    2 5
+    3 5
+    6 7
+ * ================
+ * Output:
+ * ================
+    Order of vertices in dfs from 2
+    5 3 4 1
+ * ================
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -31,7 +64,10 @@ void input() {
 }
 
 void handle_visited_node(int u) {
-    // push it to the result, do anything you want
+    /**
+     * Push node u to the result
+     * You can do anything you want
+     */
     order.push_back(u);
 }
 
@@ -69,34 +105,3 @@ int main() {
 
     return 0;
 }
-
-/**
- * Input:
- * The first line contains n, m, src, where:
- *  + n   : the number of vertices
- *  + m   : the number of edges
- *  + src : source node
- *
- * Then m lines follow, each describe en edge, the i-th line contains
- * u, v denoting that have an undirected edge between u and v
- *
- * Example:
- * ===========================
- * Input:
- * ===========================
-    8 7 2
-    1 2
-    1 4
-    2 3
-    2 4
-    2 5
-    3 5
-    6 7
- *
- * Output:
- * ===========================
-    Order of vertices in dfs from 2
-    5 3 4 1
- *
- *
- */
