@@ -73,12 +73,12 @@ int main() {
 /**
  * Input:
  * The first line contains n, m, src, where:
- *  + n:  the number of vertices
- *  + m:  thenumber of edges
- *  + src: source node
+ *  + n   : the number of vertices
+ *  + m   : the number of edges
+ *  + src : source node
  *
- * Then m lines follow, each describe en edge, the i-th line contains u, v
- denoting that have an undirected edge between u and v
+ * Then m lines follow, each describe en edge, the i-th line contains
+ * u, v denoting that have an undirected edge between u and v
  *
  * Example:
  * ===========================
@@ -95,6 +95,8 @@ int main() {
  *
  * Output:
  * ===========================
- * 5 3 4 1
+    Order of vertices in dfs from 2
+    5 3 4 1
+ *
  *
  */
