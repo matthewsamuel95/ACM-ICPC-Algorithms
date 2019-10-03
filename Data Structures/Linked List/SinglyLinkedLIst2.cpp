@@ -39,7 +39,8 @@ void TopFront(Node** head_ref){
 		cout<<"List is Empty\n";
 		return;
 	}
-	cout<<"Top element: "<<*head_ref->data<<endl;
+    Node* temp = *head_ref;
+	cout<<"Top element: "<<temp->data<<endl;
 }
 
 void PopFront(Node** head_ref, Node** tail){
@@ -47,8 +48,9 @@ void PopFront(Node** head_ref, Node** tail){
 		cout<<"Error: Empty list\n";
 		return;
 	}
-	cout<<"Deleted Element: "<<*head_ref->data<<endl;
-	*head_ref = *head_ref->next;
+    Node* temp = *head_ref;
+	cout<<"Deleted Element: "<<temp->data<<endl;
+	*head_ref = temp->next;
 
 	if(*head_ref == NULL)
 		*tail = NULL;
@@ -85,7 +87,8 @@ void TopBack(Node** tail){
 		cout<<"Error: List is Empty\n";
 		return;
 	}
-	cout<<"Last Element: "<<*tail->data<<endl;
+    Node* temp = *tail;
+	cout<<"Last Element: "<<temp->data<<endl;
 }
 
 void PopBack(Node** head_ref, Node** tail){
@@ -94,7 +97,7 @@ void PopBack(Node** head_ref, Node** tail){
 		return;
 	}
 	Node* p=*head_ref;	
-	while(*p->next->next != NULL);
+	while(p->next->next != NULL);
 	p->next=NULL;
 }
 
@@ -106,9 +109,9 @@ int main(){
 	Node *head = NULL;
 	Node *tail = NULL;
 	while(1){
-		int ch;
+		int ch, num;
 		cout<<"Enter your choice:\n1-Insert at front\n2-Insert at back\n3-Insert After\n4-delete from front\n5-delete from back\n6-First Element\n7-Last Element\n8-PrintList\n9-Exit->";
-		cin>>ch, num;
+		cin>>ch;
 		switch(ch){
 			case 1:
 				cout<<"Enter the Element: ";
@@ -137,7 +140,7 @@ int main(){
 			case 7:
 				TopBack(&tail);
 				break;
-			case 5:
+			case 8:
 				printList(head);
 				break;
 			case 9:
@@ -147,3 +150,5 @@ int main(){
 
 
 }
+
+
