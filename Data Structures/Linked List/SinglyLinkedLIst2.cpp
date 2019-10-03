@@ -145,11 +145,5 @@ int main(){
 		}
 	}
 
-	PushBack(&head, &tail, 6);
-	PushFront(&head, &tail, 7);
-	PushFront(&head, &tail, 1);
-	PushBack(&head, &tail, 4);
-	AddAfter(head->next, &tail, 8);
 
-	printList(head);
 }
