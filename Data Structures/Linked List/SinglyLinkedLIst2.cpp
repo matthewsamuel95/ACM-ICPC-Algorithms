@@ -1,122 +1,155 @@
-#include "iostream"
-#include "cstdlib"
+#include<bits/stdc++.h>
+
 using namespace std;
-struct Node
-{
+
+class Node{
+	public:
 	int data;
-	Node* link;
+	Node *next;
 };
-Node* A;
-void insert()
-{
-	int n,p;
-	cout<<"Enter the no to be Inserted:";
-	cin>>n;
-	cout<<"Enter the position:";
-	cin>>p;
-	Node* temp=new Node;
-	if (p==1)
-	{
-		temp->link=A;
-		temp->data=n;
-		A=temp;
-		return;
+
+void PushFront(Node** head_ref, Node** tail, int key){
+	Node* newnode = new Node();
+	newnode->next = *head_ref;
+	newnode->data = key;
+
+	if(*tail == NULL){
+		*tail = newnode;
 	}
-	Node* temp2=A;
-	for(int i=1;i<p-1;i++)
-	{
-		temp2=temp2->link;
-	}
-	temp->link=temp2->link;
-	temp2->link=temp;
-	temp->data=n;
+
+	*head_ref = newnode;
 }
-void delet()
-{
-	int p;
-	cout<<"Enter the position of the element to be deleted:";
-	cin>>p;
-	Node* temp=A;
-	if (p==1)
-	{
-		A=temp->link;
-		temp=NULL;
+
+void AddAfter(Node* pre_node,Node** tail, int key){
+	if(pre_node == NULL){
+		cout<<"Node can't be null\n";
 		return;
 	}
-	Node* temp2=new Node;
-	for(int i=1;i<p-1;i++)
-	{
-		temp=temp->link;
+	Node* newnode = new Node();
+	newnode->data = key;
+	newnode->next = pre_node->next;
+	pre_node->next = newnode;
+
+	if(pre_node == *tail)
+		*tail = newnode;
+}
+
+void TopFront(Node** head_ref){
+	if(*head_ref == NULL){
+		cout<<"List is Empty\n";
+		return;
 	}
-	temp2=temp->link;
-	temp->link=temp2->link;
-	temp2=NULL;
+	cout<<"Top element: "<<*head_ref->data<<endl;
+}
+
+void PopFront(Node** head_ref, Node** tail){
+	if(*head_ref == NULL){
+		cout<<"Error: Empty list\n";
+		return;
+	}
+	cout<<"Deleted Element: "<<*head_ref->data<<endl;
+	*head_ref = *head_ref->next;
+
+	if(*head_ref == NULL)
+		*tail = NULL;
 
 }
-void display()
-{
-	Node* temp=A;
-	while(temp!=NULL)
-	{
-		cout<<"->"<<temp->data;
-		temp=temp->link;
+
+void PushBack(Node** head_ref, Node** tail, int key){
+	Node* newnode = new Node();
+	newnode->data = key;
+	newnode->next = NULL;
+
+	if(*tail == NULL){
+		*head_ref = newnode;
+		*tail = newnode;
 	}
-	cout<<"\n"<<"---------------------------"<<"\n";
-}
-void count()
-{
-	int c=0;
-	Node* temp=A;
-	while(temp!=NULL)
-	{
-		c++;
-		temp=temp->link;
+	else{
+		Node* temp = *tail;
+		temp->next = newnode;
+		*tail = newnode;
 	}
-	cout<<c<<endl;
 }
-void rev()
-{
-	Node* temp=A;
-	Node* temp2=new Node;
-	Node* prev=temp->link;
-	while(prev!=NULL)
-	{
-		temp2=prev->link;
-		prev->link=temp;
-		temp=prev;
-		prev=temp2;
+
+void printList(Node* node){
+	if(node == NULL){
+		cout<<"Error: List is Empty"<<endl;
 	}
-	A->link=NULL;
-	A=temp;
+	while(node->next != NULL){
+		cout<<node->data<<" ";
+		node=node->next;
+	}
 }
-int main()
-{
-	A=NULL;
-	while(1)
-	{
+void TopBack(Node** tail){
+	if(*tail == NULL){
+		cout<<"Error: List is Empty\n";
+		return;
+	}
+	cout<<"Last Element: "<<*tail->data<<endl;
+}
+
+void PopBack(Node** head_ref, Node** tail){
+	if(*head_ref == NULL){
+		cout<<"Error: List is Empty\n";
+		return;
+	}
+	Node* p=*head_ref;	
+	while(*p->next->next != NULL);
+	p->next=NULL;
+}
+
+// bool find(int key){
+	
+// }
+
+int main(){
+	Node *head = NULL;
+	Node *tail = NULL;
+	while(1){
 		int ch;
-		cout<<"Enter your choice:\n1-Insert\n2-Delete\n3-Display\n4-Reverse\n5-Count\n6-Exit\n->";
-		cin>>ch;
-		switch(ch)
-		{
+		cout<<"Enter your choice:\n1-Insert at front\n2-Insert at back\n3-Insert After\n4-delete from front\n5-delete from back\n6-First Element\n7-Last Element\n8-PrintList\n9-Exit->";
+		cin>>ch, num;
+		switch(ch){
 			case 1:
-				insert();
+				cout<<"Enter the Element: ";
+				cin>>num;
+				PushFront(&head, &tail, num);
 				break;
 			case 2:
-				delet();
+				cout<<"Enter the Element: ";
+				cin>>num;
+				PushBack(&head, &tail, num);
 				break;
 			case 3:
-				display();
+				cout<<"Enter the Element: ";
+				cin>>num;
+				AddAfter(head->next, &tail, num);
 				break;
 			case 4:
-				rev();
+				PopFront(&head, &tail);
 				break;
 			case 5:
-				count();
+				PopBack(&head, &tail);
 				break;
 			case 6:
+				TopFront(&head);
+				break;
+			case 7:
+				TopBack(&tail);
+				break;
+			case 5:
+				printList(head);
+				break;
+			case 9:
 				exit(0);
 		}
 	}
-}
 
+	PushBack(&head, &tail, 6);
+	PushFront(&head, &tail, 7);
+	PushFront(&head, &tail, 1);
+	PushBack(&head, &tail, 4);
+	AddAfter(head->next, &tail, 8);
+
+	printList(head);
+}
