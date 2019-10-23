@@ -28,24 +28,25 @@ def rabin_karp_matcher(T, P, d, q):
     p = 0
     t = 0
     # preprocessing
-    for i in range(m-1):
-        h = (h*d) % q
+    for i in range(m - 1):
+        h = (h * d) % q
     for i in range(m):
-        p = (d*p + ord(P[i])) % q
-        t = (d*t + ord(T[i])) % q
+        p = (d * p + ord(P[i])) % q
+        t = (d * t + ord(T[i])) % q
     # string matching
-    for s in range(n-m+1):
+    for s in range(n - m + 1):
         if p == t:
             for j in range(m):
-                if T[s+j] != P[j]:
+                if T[s + j] != P[j]:
                     break
             j += 1
             if j == m:
                 print("Pattern found at index: " + str(s))
-        if s < n-m:
-            t = (d*(t - ord(T[s])*h) + ord(T[s+m])) % q
+        if s < n - m:
+            t = (d * (t - ord(T[s]) * h) + ord(T[s + m])) % q
             if t < 0:  # for negative t
                 t += q
-                
+
+
 text = "JUSTANANOTHERTEXT"
 rabin_karp_matcher(text, "AN", len(text), 13)

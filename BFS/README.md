@@ -18,18 +18,18 @@ To make this process easy, use a queue to store the node and mark it as 'visited
 ## Pseudocode
 ```
 
-BFS (G, s)                   //Where G is the graph and s is the source node
-      let Q be queue.
-      Q.enqueue( s ) //Inserting s in queue until all its neighbour vertices are marked.
+BFS (G, s) //Where 'G' is the graph and 's' is the source node.
+      let 'Q' be a queue.
+      Q.enqueue( s ) //Inserting s in the queue until all its neighbouring vertices are marked.
 
-      mark s as visited.
-      while ( Q is not empty)
-           //Removing that vertex from queue,whose neighbour will be visited now
+      mark 's' as visited.
+      while ( Q is not empty )
+           //Removing that vertex from queue, whose neighbour 'v' will be visited now
            v  =  Q.dequeue( )
 
-          //processing all the neighbours of v  
-          for all neighbours w of v in Graph G
-               if w is not visited 
-                        Q.enqueue( w )             //Stores w in Q to further visit its neighbour
-                        mark w as visited.
+          //processing all the neighbours of 'v'  
+          for all neighbours 'w' of 'v' in Graph 'G'
+               if 'w' is not visited 
+                        Q.enqueue( w )             //Stores 'w' in 'Q' to further visit its neighbour
+                        mark 'w' as visited.
 ```

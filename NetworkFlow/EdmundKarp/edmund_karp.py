@@ -44,10 +44,11 @@ def BFSEK(E, C, s, t, F, P, M, BFSq):
                     return M[t], P
     return 0, P
 
+
 if __name__ == "__main__":
     E = [[1, 2], [2, 3], [3], []]  # Adjacency Matrix
-    C = [[0, 1000000, 1000000, 0], [0, 0, 1, 1000000],
-         [0, 0, 0, 1000000], [0, 0, 0, 0]]  # Capacity Matrix
+    C = [[0, 1000000, 1000000, 0], [0, 0, 1, 1000000], [0, 0, 0, 1000000],
+         [0, 0, 0, 0]]  # Capacity Matrix
     s = 0  # Source
     t = 3  # Sink
     print(EdmondsKarp(E, C, s, t))

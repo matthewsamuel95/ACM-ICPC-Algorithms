@@ -4,14 +4,15 @@ https://gihtub.com/shakeelsamsu
 Oct 7 18 9:42:35 PM
 """
 
+
 class fenwick:
     """Fenwick Tree"""
-    
-    #def __init__(self, list):
-    #    """Initialize BIT with list in O(n*log(n))"""
-    #    self.array = [0] * (len(list) + 1)
-    #    for idx, val in enumerate(list):
-    #        self.update(idx, val)
+
+    # def __init__(self, list):
+    #     """Initialize BIT with list in O(n*log(n))"""
+    #     self.array = [0] * (len(list) + 1)
+    #     for idx, val in enumerate(list):
+    #         self.update(idx, val)
 
     def __init__(self, list):
         """"Initialize BIT with list in O(n)"""
@@ -48,18 +49,22 @@ if __name__ == '__main__':
     print('Array: [{}]'.format(', '.join(map(str, array))))
     print()
 
-    print('Prefix sum of first {} elements: {}'.format(13, bit.prefix_query(12)))
+    print('Prefix sum of first {} elements: {}'.format(13,
+                                                       bit.prefix_query(12)))
     print('Prefix sum of first {} elements: {}'.format(7, bit.prefix_query(6)))
-    print('Range sum from pos {} to pos {}: {}'.format(1, 5, bit.range_query(1, 5)))
+    print('Range sum from pos {} to pos {}: {}'.format(1, 5,
+                                                       bit.range_query(1, 5)))
     print()
-    
+
     bit.update(4, 2)
     print('Add {} to element at pos {}'.format(2, 4))
     new_array = [bit.range_query(idx, idx) for idx in range(len(array))]
     print('Array: [{}]'.format(', '.join(map(str, new_array))))
     print()
 
-    print('Prefix sum of first {} elements: {}'.format(13, bit.prefix_query(12)))
+    print('Prefix sum of first {} elements: {}'.format(13,
+                                                       bit.prefix_query(12)))
     print('Prefix sum of first {} elements: {}'.format(7, bit.prefix_query(6)))
-    print('Range sum from pos {} to pos {}: {}'.format(1, 5, bit.range_query(1, 5)))
+    print('Range sum from pos {} to pos {}: {}'.format(1, 5,
+                                                       bit.range_query(1, 5)))
     print()
