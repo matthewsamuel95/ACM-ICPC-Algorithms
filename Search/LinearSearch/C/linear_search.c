@@ -14,10 +14,17 @@ int search(int arr[], int n, int key)
 
 int main()
 {
-  int arr[] = {4, 10, 8, 25, 13, 89, 45, 12, 78, 11};
-  int key = 78;
+  int size;
+  printf("Enter the size of the array\n");
+  scanf("%d\n",&size);
+  int arr[size],key;
   int n = sizeof(arr) / sizeof(int);
-
+  printf("Enter the elememts of the array\n");
+ for(int i=0;i<n;i++){
+    scanf("%d\n",arr[i]);
+  }
+  printf("Enter the element you want to search");
+  scanf("%d\n",&key);
   int res = search(arr, n, key);
   
   if (res == -1)
