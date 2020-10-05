@@ -84,6 +84,7 @@ ACM-ICPC Algorithms is a collection of important algorithms and data structures 
    * [Longest Bitonic SubSequence](/DP/LongestBitonicSubseq)
    * [Tiling Problem](/DP/Tiling%20Problem)
 * [Graph Algorithms](/Graph)
+   * [Articulation Bridges](/Graph/Articulation_bridges)
    * [Articulation Points](/Graph/Articulation_points)
    * [Bellman Ford SSSP](/Graph/BellmanFordSSSP)
    * [Bridges](/Graph/bridges)
