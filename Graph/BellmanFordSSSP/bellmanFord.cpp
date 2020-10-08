@@ -69,6 +69,13 @@ int main() {
         GRAPH[u].push_back({ v, cost });
     }
 
+    auto sol = bellmanFord(GRAPH, vertices, 1);
+
+    if(sol.first)
+        cout << "Negative Cycle Detected\n";
+    else
+        for(int i = 1;i <= vertices;++i)
+            cout << i << ' ' << sol.second[i] << '\n';
 
     return 0;
 }
