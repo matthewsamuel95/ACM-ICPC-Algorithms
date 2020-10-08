@@ -11,7 +11,7 @@ using namespace std;
 const int VERTEX_MAX = 1001;
 const int INF = (1 << 30);
 
-pair < bool, vector < int > > bellmanFord(const vector < pair < int, int > >& G[VERTEX_MAX], const int& vertices, const int& src) {
+pair < bool, vector < int > > bellmanFord(const vector < pair < int, int > > G[VERTEX_MAX], const int& vertices, const int& src) {
 
     queue < int > q;
 
@@ -29,7 +29,7 @@ pair < bool, vector < int > > bellmanFord(const vector < pair < int, int > >& G[
     while(!q.empty() && !hasNegativeCycles) {
 
         const int node = q.front();
-        visited[node] = false;
+        inQueue[node] = false;
 
         q.pop();
 
@@ -66,9 +66,8 @@ int main() {
         int u, v, cost;
         cin >> u >> v >> cost;
 
-        G[u].push_back({ v, cost });
+        GRAPH[u].push_back({ v, cost });
     }
-
 
 
     return 0;
