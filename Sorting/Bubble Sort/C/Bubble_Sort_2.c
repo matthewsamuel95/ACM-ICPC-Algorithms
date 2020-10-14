@@ -1,34 +1,68 @@
 #include <stdio.h>
- 
-int main()
-{
-  int array[100], n, c, d, swap;
- 
-  printf("Enter number of elements\n");
-  scanf("%d", &n);
- 
-  printf("Enter %d integers\n", n);
- 
-  for (c = 0; c < n; c++)
-    scanf("%d", &array[c]);
- 
-  for (c = 0 ; c < n - 1; c++)
-  {
-    for (d = 0 ; d < n - c - 1; d++)
-    {
-      if (array[d] > array[d+1]) /* For decreasing order use < */
-      {
-        swap       = array[d];
-        array[d]   = array[d+1];
-        array[d+1] = swap;
+
+void swap (int array[], int j){
+  int aux = 0;
+  aux = array[j]; 
+  array[j] = array[j+1]; 
+  array[j+1] = aux;
+}
+
+void bubbleSort(int array[], int size, int order){
+  if(order == 1){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] > array[j+1]){
+          swap(array, j);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
       }
     }
   }
- 
-  printf("Sorted list in ascending order:\n");
- 
-  for (c = 0; c < n; c++)
-     printf("%d\n", array[c]);
- 
+
+  else if(order == 2){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] < array[j+1]){
+          swap(array, j);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+}
+int main() {
+  int size;
+  int order;
+
+  printf("Enter the size of the array:\n");
+	scanf("%i", &size);
+
+	int array[size];
+
+	printf("Enter the elements of the array:\n");
+	for(int i = 0; i < size; i++){
+	  scanf("%i", &array[i]);
+  }
+
+  printf("What type of ordering do you want: \n 1 - Ascending \n 2 - Descending\n");
+  scanf("%i", &order);
+
+	bubbleSort(array, size, order);
+
+	printf("The sorted array is:\n");
+	for (int i = 0; i < size; i++){
+    printf("%i ", array[i]);
+  }
+  
   return 0;
 }
