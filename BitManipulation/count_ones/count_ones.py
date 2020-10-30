@@ -1,9 +1,7 @@
-def count_ones(n: int):
+def count_ones(n):
     count = 0
-    while n:
-        if n & 1:
-            count += 1
-        n >>= 1
+    n=bin(n).split('b')[1]
+    count=n.count('1')
     return count
 
 
