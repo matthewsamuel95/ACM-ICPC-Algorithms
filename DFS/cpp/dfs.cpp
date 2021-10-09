@@ -22,15 +22,14 @@ void dfs(int node)
     visited[node] = true;
 
     // For all nodes adjacent to the given node and have not yet been visited, we apply DFS function again.
-    for(int i=0;i<v[node].size();i++)
-    {
-        int u = v[node][i];
-        if(!visited[u])
-        {
-            cout<<u<<"  ";
-            dfs(u);
+
+    for(auto neighbour: v[node]){
+        if( !visited[neighbour]){
+           cout << neighbour << " ";
+           dfs(neighbour);
         }
-    }
+
+    }    
 }
 
 int main()
